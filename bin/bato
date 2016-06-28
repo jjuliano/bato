@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+require "bato/tagatala"
+
+if pangalan_ng_file = ARGV[0]
+  tagatala = Bato::Tagatala.new
+  kodigo = File.read pangalan_ng_file, encoding: 'utf-8'
+  ruby_kodigo = tagatala.sa_ruby kodigo
+  eval ruby_kodigo
+
+else
+  puts <<-EOS
+Hindi tinukoy ang file. Ang tamang sintaks ay:
+
+bato file.bato
+  EOS
+
+end
