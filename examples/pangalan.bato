@@ -1,0 +1,10 @@
+panuntunang sabihinAngPangalan(pangalan = wala)
+  kapag pangalan != wala
+    isulat "Magandang araw sa iyo #{pangalan}!"
+  kung_hindi
+    isulat "Magandang araw!"
+  katapusan
+katapusan
+
+sabihinAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
+sabihinAngPangalan 		   # => "Magandang araw!"

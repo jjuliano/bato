@@ -30,16 +30,6 @@ at pa-andarin ang program sa pamamagitan ng
 
 ## Sintaks
 
-### Bilang
-
-Pambuong Bilang
-
-    123
-
-Hating Bilang
-
-    123.45
-
 ### Pagsusulat
 
     "Ito ay mga serye ng mga sulat sa wikang Tagalog"
@@ -90,6 +80,19 @@ Paggamit ng kondisyon.
     siguraduhing
       isulat "Tapos na"
     katapusan
+
+### Panuntunan
+
+	panuntunang sabihinAngPangalan(pangalan = wala)
+	  kapag pangalan != wala
+	    isulat "Magandang araw sa iyo #{pangalan}!"
+	  kung_hindi
+	    isulat "Magandang araw!"
+	  katapusan
+	katapusan
+	
+	sabihinAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
+	sabihinAngPangalan 		   # => "Magandang araw!"
 
 ## Pagtulong sa pagdedevelop ng Bato
 

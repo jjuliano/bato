@@ -53,25 +53,25 @@ module RubyParserStuff
       ["module",          [:kMODULE,   :kMODULE     ], :expr_beg   ],
       ["ngunit_kapag",    [:kELSIF,    :kELSIF      ], :expr_beg   ],
       ["kung_kapag",      [:kELSIF,    :kELSIF      ], :expr_beg   ],
-      ["def",             [:kDEF,      :kDEF        ], :expr_fname ],
+      ["panuntunang",     [:kDEF,      :kDEF        ], :expr_fname ],
       ["iligtas",         [:kRESCUE,   :kRESCUE_MOD ], :expr_mid   ],
       ["hindi",           [:kNOT,      :kNOT        ], :expr_beg   ],
       ["dapat",           [:kTHEN,     :kTHEN       ], :expr_beg   ],
       ["yield",           [:kYIELD,    :kYIELD      ], :expr_arg   ],
-      ["for",             [:kFOR,      :kFOR        ], :expr_beg   ],
+      ["para_sa",         [:kFOR,      :kFOR        ], :expr_beg   ],
       ["self",            [:kSELF,     :kSELF       ], :expr_end   ],
       ["mali",            [:kFALSE,    :kFALSE      ], :expr_end   ],
       ["subukang_muli",   [:kRETRY,    :kRETRY      ], :expr_end   ],
-      ["return",          [:kRETURN,   :kRETURN     ], :expr_mid   ],
+      ["magbigay",        [:kRETURN,   :kRETURN     ], :expr_mid   ],
       ["tama",            [:kTRUE,     :kTRUE       ], :expr_end   ],
       ["kapag",           [:kIF,       :kIF_MOD     ], :expr_beg   ],
       ["defined?",        [:kDEFINED,  :kDEFINED    ], :expr_arg   ],
       ["super",           [:kSUPER,    :kSUPER      ], :expr_arg   ],
       ["undef",           [:kUNDEF,    :kUNDEF      ], :expr_fname ],
       ["break",           [:kBREAK,    :kBREAK      ], :expr_mid   ],
-      ["in",              [:kIN,       :kIN         ], :expr_beg   ],
-      ["do",              [:kDO,       :kDO         ], :expr_beg   ],
-      ["nil",             [:kNIL,      :kNIL        ], :expr_end   ],
+      ["sa",              [:kIN,       :kIN         ], :expr_beg   ],
+      ["na_ganito",       [:kDO,       :kDO         ], :expr_beg   ],
+      ["wala",            [:kNIL,      :kNIL        ], :expr_end   ],
       ["until",           [:kUNTIL,    :kUNTIL_MOD  ], :expr_beg   ],
       ["unless",          [:kUNLESS,   :kUNLESS_MOD ], :expr_beg   ],
       ["or",              [:kOR,       :kOR         ], :expr_beg   ],
@@ -85,7 +85,7 @@ module RubyParserStuff
       ["__FILE__",        [:k__FILE__, :k__FILE__   ], :expr_end   ],
       ["END",             [:klEND,     :klEND       ], :expr_end   ],
       ["BEGIN",           [:klBEGIN,   :klBEGIN     ], :expr_end   ],
-      ["while",           [:kWHILE,    :kWHILE_MOD  ], :expr_beg   ],
+      ["habang",          [:kWHILE,    :kWHILE_MOD  ], :expr_beg   ],
       ["alias",           [:kALIAS,    :kALIAS      ], :expr_fname ],
       ["__ENCODING__",    [:k__ENCODING__, :k__ENCODING__], :expr_end],
     ].map { |args| KWtable.new(*args) }
@@ -102,7 +102,7 @@ module RubyParserStuff
 
     WORDLIST18.delete "__ENCODING__"
 
-    %w[and kung_sakaling ngunit_kapag kung_kapag for kapag in module or unless until pagka while].each do |k|
+    %w[and kung_sakaling ngunit_kapag kung_kapag para_sa kapag sa module or unless until pagka habang].each do |k|
       WORDLIST19[k] = WORDLIST19[k].dup
       WORDLIST19[k].state = :expr_value
     end

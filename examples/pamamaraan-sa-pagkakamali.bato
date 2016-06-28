@@ -1,0 +1,11 @@
+bilang_ng_pagkakamali = 0
+simula
+  # mag komento kapag hindi sigurado
+  1 / 0
+iligtas => pagkakamali
+  bilang_ng_pagkakamali += 1
+  subukang_muli kapag bilang_ng_pagkakamali < 3
+  iangat "malubhang pagkakamali"
+siguraduhing
+  isulat "Tapos na"
+katapusan
