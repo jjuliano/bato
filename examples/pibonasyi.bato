@@ -32,23 +32,23 @@ panuntunang pibonasyingInuulit(n, n1 = 1, n2 = 1)
 katapusan
 
 panuntunang pibonasyingBuntutangInuulit(n, n1 = 1, n2 = 1)
-  magbigay n1 kapag n <= 1
-  magbigay n2 kapag n == 2
-  magbigay pibonasyi(n - 1, n2, n1 + n2)
+  magbalik n1 kapag n <= 1
+  magbalik n2 kapag n == 2
+  magbalik pibonasyi(n - 1, n2, n1 + n2)
 katapusan
 
 panuntunang pibonasyingPaguulit(n, n1 = 1, n2 = 1)
   (2..n).isaisahin {
     n1, n2 = n2, n1 + n2
   }
-  magbigay n1
+  magbalik n1
 katapusan
 
 panuntunang pibonasyingPaguulitNaUmiikot(n, n1 = 1, n2 = 1)
   para_sa i sa 2..n
     n1, n2 = n2, n1 + n2
   katapusan
-  magbigay n1
+  magbalik n1
 katapusan
 
 isulat "Gamit ang Panuntunang Pibonasyi sa 10 ay #{pibonasyi 10}"

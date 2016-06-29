@@ -1,0 +1,27 @@
+panuntunan gumawaNgID
+  isulat "------------------------------------------"
+  
+  magbibigay
+  
+  isulat "------------------------------------------"
+katapusan
+
+panuntunan ID(impormasyon = {})
+  gumawaNgID na_ganito
+    sabihin <<-KATAPUSAN
+  Pangalan: #{impormasyon[:pangalan]}
+  Edad:     #{impormasyon[:edad]}
+  Tirahan:  #{impormasyon[:tirahan]}
+  Baitang:  #{impormasyon[:baitang]}
+  Seksiyon: #{impormasyon[:seksiyon]}
+    KATAPUSAN
+  katapusan
+katapusan
+
+ID({
+  pangalan: "Maliksi Batubalani",
+  edad: "13",
+  tirahan: "Ilocos",
+  baitang: "6",
+  seksiyon: "Masisipag"
+})

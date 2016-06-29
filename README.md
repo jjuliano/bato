@@ -94,6 +94,371 @@ Paggamit ng kondisyon.
 	sabihinAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
 	sabihinAngPangalan 		   # => "Magandang araw!"
 
+
+## Paggamit ng mga ekspresyon ng mga salita sa program
+
+### katapusan
+
+Maari kang gumamit ng mga sumusunod sa pagtatapos ng program
+
+	katapusan
+	tapos
+	pagtatapos
+	natapos
+	tapos_na
+	natapos_na
+	natapos_din
+
+Sampol ng paggamit
+
+	bilang = 0
+	kapag bilang > 1
+	  isulat "Mayroon ng laman ang bilang na #{bilang}"
+	kung_hindi
+	  isulat "Wala pang laman ang bilang"
+	tapos_na # o alin sa mga salitang katapusan, tapos, pagtatapos, natapos, natapos_na, natapos_din
+
+###  kung_hindi 
+
+Kapag ang ekspresyon ay hindi nasunod maaring gumamit ng mga sumusunod
+
+	kung_hindi
+	kung_hindi_naman
+	kapag_hindi
+	kapag_hindi_naman
+	kung_hindi_pa
+	kapag_hindi_pa
+	at_kung_hindi
+	at_kapag_hindi
+	at_kung_hindi_naman
+	at_kapag_hindi_naman
+	at_kapag_hindi_pa
+	at_kung_hindi_pa
+	maliban_dito
+	maliban_sa_mga_ito
+
+Sampol ng paggamit
+
+	pangalan_mo = "Maliksi"
+	kapag_ang pangalan_mo == "Maliksi"
+	  isulat "Ikaw ay si #{pangalan_mo}!"
+	kung_hindi_naman
+	  isulat "Magandang araw sa iyo #{pangalan_mo}!"
+	katapusan
+
+### sakali
+
+Kapag mayroon kang ekspresyon na madaming resulta gawa ng mga iba't ibang kondisyon, maari kang gumamit ng mga sumusunod
+
+	sakaling
+	sakali
+	kung_sakaling
+	sakali_na
+	kung_sakali_na
+
+Sampol ng paggamit
+
+	pangalan_mo = "Mabait"
+	
+	sakaling pangalan_mo
+	ay "Maliksi"
+	  isulat "Ikaw ay si Maliksi!"
+	ay "Matipuno"
+	  isulat "Ikaw ay si Matipuno!"
+	ay "Mabait"
+	  isulat "Ikaw ay si Mabait!"
+	maliban_dito
+	  isulat "Magandang araw sa iyo!"
+	katapusan
+
+### siguraduhing
+
+Kung mayroon kang ekspresyon na gusto mong masunod kahit ano pa ang kahihinatnan nito, gumamit ng mga sumusunod
+
+	siguraduhing
+	siguraduhin
+	panigurado
+
+Sampol ng paggamit
+
+	simulan
+	  itaas "May sira!"
+	agapan
+	  isulat "Ipagpatuloy..."
+	  itaas "May nasira na na-agapan"
+	siguraduhing
+	  isulat "Tapos na"
+	katapusan
+
+### modyul
+
+Ang modyul ay ang lalagyanan ng mga klase sa iyong program
+
+	modyul
+
+Sampol ng paggamit
+
+	modyul MgaAlagangHayop
+	  KAILANGAN_DAMI_NG_ASO = 5
+	  klase Aso
+	    panuntunan tahol
+	      sabihin "Woof..."
+	    katapusan
+
+	    panuntunan kumanin
+	      sabihin "..."
+	    katapusan
+
+	    panuntunan ikembot_ang_buntot
+	      sabihin "Ginagawa ko ito dahil masaya ako!"
+	    katapusan
+	  katapusan  
+	katapusan
+
+	dami = 6
+	browny = MgaAlagangHayop::Aso.new
+	browny.ikembot_ang_buntot kapag dami >= MgaHayop::KAILANGAN_DAMI_NG_ASO
+
+### ngunit_kapag
+
+Gumamit ng ngunit_kapag kapag mayroon ka pang kondisyon maliban sa nauna ng kondisyon
+
+	ngunit_kapag
+	kung_kapag
+	ngunit_kapag_ang
+	kung_kapag_ang
+
+Sampol ng paggamit
+
+	pangalan_mo = "Masipag"
+	kapag_ang pangalan_mo == "Matipuno"
+	  sabihin "Ikaw ay si Matipuno!"
+	ngunit_kapag_ang pangalan_mo == "Masipag"
+	  sabihin "Ikaw ay si Masipag!"
+	maliban_sa_mga_ito
+	  sabihin "Wala kang rekord saamin!"
+	katapusan
+
+### panuntunan
+
+Ang panuntunan ay may kalakip na pangalan upang ito ay matawag sa program
+
+	panuntunang
+	panuntunan
+
+Sampol ng paggamit
+
+	panuntunan gumawaNgID(estudyante = {})
+	  pangalan = estudyante[:pangalan]
+	  edad 	   = estudyante[:edad]
+	  tirahan  = estudyante[:tirahan]
+	  baitang  = estudyante[:baitang]
+	  seksiyon = estudyante[:seksiyon]
+	  
+	  sabihin <<-KATAPUSAN
+	  	Pangalan: #{pangalan}
+		Edad:     #{edad}
+		Tirahan:  #{tirahan}
+		Baitang:  #{baitang}
+		Seksiyon: #{seksiyon}
+	  KATAPUSAN
+	katapusan
+	
+	gumawaNgID({
+	  pangalan: "Maliksi Batubalani",
+	  edad: "13",
+	  tirahan: "Ilocos",
+	  baitang: "6",
+	  seksiyon: "Masisipag"
+	})
+
+### agapan
+
+Ang agapan ay ginagamit kung mayroon maaaring mangyaring pagkakamali na gusto mong maisalba o mailigtas
+
+	iligtas
+	agapan
+
+Sampol ng paggamit
+
+	simulan
+	  1 / 0
+	agapan
+	  sabihin "Hindi ito posible!"
+	katapusan
+
+### dapat
+
+Kapag mayroon kang ekspresyon na mayroong inaasahan na resulta, gumamit ng dapat
+
+	dapat
+
+Sampol ng paggamit
+
+	panulat_mo = "lapis"
+	
+	papel = sakaling panulat_mo
+	  ay "lapis" dapat "bond paper"
+	  ay "ballpen" dapat "dilaw na papel"
+	  maliban_sa_mga_ito "intermediate paper"
+	katapusan
+	
+	sabihin "Ang papel na gagamitin mo ay #{papel}"
+
+### mabibigyan
+
+Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gumagana pa ang program, gumamit ng mabibigyan
+
+	bibigyan
+	magbibigay
+	ibibigay
+	may_inaasahan
+	mabibigyan
+
+Sampol ng paggamit
+
+    panuntunan gumawaNgID
+      isulat "------------------------------------------"
+      mabibigyan
+      isulat "------------------------------------------"
+    katapusan
+	
+    panuntunan ID(impormasyon = {})
+      gumawaNgID na_ganito
+        sabihin <<-KATAPUSAN
+      Pangalan: #{impormasyon[:pangalan]}
+      Edad:     #{impormasyon[:edad]}
+      Tirahan:  #{impormasyon[:tirahan]}
+      Baitang:  #{impormasyon[:baitang]}
+      Seksiyon: #{impormasyon[:seksiyon]}
+        KATAPUSAN
+      katapusan
+    katapusan
+    
+    ID({
+      pangalan: "Maliksi Batubalani",
+      edad: "13",
+      tirahan: "Ilocos",
+      baitang: "6",
+      seksiyon: "Masisipag"
+    })
+
+### para_sa
+
+Kapag may listahan na nais mong isa isahin, gumamit ng para_sa
+
+	para_sa
+	para_ang
+
+Sampol ng paggamit
+
+	listahan_ng_mga_prutas = ["mansanas", "mangga", "guava", "santol", "ubas"]
+	para_sa prutas na_nasa listahan_ng_mga_prutas ganito_gawin
+	  sabihin prutas.malaking_titik
+	katapusan
+
+## Ang mga sumusunod ay ipagpapatuloy ...
+
+### subukang_muli
+
+	subukang_muli
+
+### ibalik
+
+	ibalik
+	magbalik
+	isauli
+
+### kapag
+
+	kapag
+	kapag_ang
+	kapag_na_ang
+	kung
+	kung_ang
+
+### nakatukoy?
+
+	nakatukoy?
+	nakasaad?
+
+### tanggalin
+
+	tanggalin
+	magtanggal
+
+### ihinto
+
+	ihinto
+
+### sa
+
+	sa
+	sa_loob_ng
+	nasa
+	na_nasa
+
+### ganito
+
+	na_ganito
+	nang_ganito
+	ganito
+
+### hanggang
+
+	hanggang
+	hanggang_ang
+	mapa_hanggang
+
+### maliban_na
+
+	malibang
+	maliban_na
+	maliban_ang
+
+### o
+
+	o
+	o_ang
+
+### kasunod
+
+	sumunod
+	kasunod
+
+### pagka
+
+	pagka
+	pagka_ang
+
+### ulitin
+
+	ulitin
+	at_ulitin
+	uliting_muli
+
+### at
+
+	at
+	at_ang
+
+### simula
+
+	simula
+
+### klase
+
+	klase
+
+### habang
+
+	habang
+	habang_ang
+
+### alyas
+
+	alyas
+
 ## Pagtulong sa pagdedevelop ng Bato
 
 Magpadala ng mga kahilingan sa paggawa ng ticket.

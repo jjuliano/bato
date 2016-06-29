@@ -1,0 +1,45 @@
+# each loop
+['a','b','c','d'].isaisahin na_ganito |titik|
+	isulat "Ang titik ay #{titik}"
+katapusan
+
+# each loop on range
+(1..10).isaisahin na_ganito |bilang|
+	isulat "Ang bilang ay #{bilang}"
+katapusan
+
+# while loop
+bilang = 1
+habang bilang < 10 ganito
+	isulat "Ang bilang ay #{bilang} na"
+	bilang += 1
+katapusan
+
+# begin while
+bilang = 0
+panghuling_bilang = 5
+simula
+	isulat "Ang bilang ay #{bilang} na"
+	bilang += 1
+katapusan habang bilang < panghuling_bilang
+
+# until
+bilang = 0
+panghuling_bilang = 5
+hanggang bilang > panghuling_bilang ganito
+	isulat "Ang bilang ay #{bilang} na"
+	bilang += 1
+katapusan
+
+# begin until
+bilang = 0
+panghuling_bilang = 5
+simula
+	isulat "Ang bilang ay #{bilang} na"
+	bilang += 1
+katapusan hanggang bilang < panghuling_bilang
+
+# for loop
+para_ang bilang na_nasa 0..5
+   isulat "Ang bilang ay #{bilang} na"
+katapusan
