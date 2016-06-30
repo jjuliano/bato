@@ -475,4 +475,4 @@ Magpadala ng mga kahilingan sa paggawa ng ticket.
 
 ## Lisensya
 
-Masasyusets Institut Ng Tekonolohiya License (makikita sa LICENSE.txt na file).
+Instituto Ng Tekonolohiya sa Massachusetts Licence (makikita sa LICENSE.txt na file).
