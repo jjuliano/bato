@@ -114,11 +114,12 @@ Sampol ng paggamit
 	  isulat "Wala pang laman ang bilang"
 	wakas
 
-###  iba 
+###  kung_iba 
 
 Kapag ang ekspresyon ay hindi nasunod maaring gumamit sa alin sa mga sumusunod
 
 	iba
+	kung_iba
 	kung_hindi
 	kung_hindi_naman
 	kapag_hindi
@@ -318,7 +319,7 @@ Sampol ng paggamit
 
     panuntunan gumawaNgID
       isulat "------------------------------------------"
-      mabibigyan
+      magbigay_daan
       isulat "------------------------------------------"
     katapusan
 	
@@ -358,6 +359,8 @@ Sampol ng paggamit
 
 ### subukang_muli
 
+Ginagamit ang subukang_muli upang umikot muli ang ekspresyon kung may sirang nangyari at nais mo ulit subukan pa andarin
+
 	subukang_muli
 
 Sampol ng paggamit
@@ -375,17 +378,45 @@ Sampol ng paggamit
 
 ### ibalik
 
+Kapag mayroon kang ibabalik na resulta sa nagtawag ng panuntunan
+
 	ibalik
+	ibalik_ang
 	magbalik
+	magbalik_nang
 	isauli
+	isauli_ang
+	ibigay
+	ibigay_ang
+	magbigay
+	magbigay_nang
+
+Sampol ng paggamit
+
+	panuntunan magdagdag_ng_isa(halaga)
+		idadagdag = halaga + 1
+		ibalik_ang halaga
+	katapusan
 
 ### kapag
+
+Ginagamit ang kapag kung meron kang kondisyon sa iyong ekspresyon
 
 	kapag
 	kapag_ang
 	kapag_na_ang
 	kung
 	kung_ang
+
+Sampol ng paggamit
+
+	kapag_ang 1 > 0
+	  sabihin "mas madami!"
+	kung_iba
+	  sabihin "may sira"
+	katapusan
+
+## Patuloy na ginagawa ang dokumento para sa mga sumusunod...
 
 ### nakatukoy?
 
