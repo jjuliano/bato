@@ -16,7 +16,7 @@ panuntunang pibonasyingPagsuksok(n, n1 = 1, n2 = 1)
   kapag n <= 2
     [0, n1, n2][n]
   kung_hindi
-    ([wala].umikot.kumuha(n-2).isuksok([n1, n2]) na_ganito |nakaraan, x|
+    ([wala].umikot.kumuha(n-2).ipasok([n1, n2]) na_ganito |nakaraan, x|
       nakaraan.magbagsak(1).itulak(nakaraan[0] + nakaraan[1])
     katapusan).huli
   katapusan
@@ -38,7 +38,7 @@ panuntunang pibonasyingBuntutangInuulit(n, n1 = 1, n2 = 1)
 katapusan
 
 panuntunang pibonasyingPaguulit(n, n1 = 1, n2 = 1)
-  (2..n).isaisahin {
+  (2..n).sa_bawat_isa {
     n1, n2 = n2, n1 + n2
   }
   magbalik n1

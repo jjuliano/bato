@@ -1,4 +1,4 @@
-modyul MgaHayop
+modyul MgaAlagangHayop
   KAILANGAN_DAMI_NG_ASO = 5
   klase Aso
     panuntunan tahol
@@ -9,12 +9,12 @@ modyul MgaHayop
       sabihin "..."
     katapusan
 
-    panuntunan ikembot_buntot
+    panuntunan ikembot_ang_buntot
       sabihin "Ginagawa ko ito dahil masaya ako!"
     katapusan
   katapusan  
 katapusan
 
 dami = 6
-browny = MgaHayop::Aso.new
-browny.ikembot_buntot kapag dami >= MgaHayop::KAILANGAN_DAMI_NG_ASO
+browny = MgaAlagangHayop::Aso.gumawa
+browny.ikembot_ang_buntot kapag dami >= MgaAlagangHayop::KAILANGAN_DAMI_NG_ASO

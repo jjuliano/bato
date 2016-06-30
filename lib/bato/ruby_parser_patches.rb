@@ -47,12 +47,9 @@ module RubyParserStuff
   class Keyword
     wordlist = [
       ["katapusan",            [:kEND,      :kEND        ], :expr_end   ],
-      ["tapos",                [:kEND,      :kEND        ], :expr_end   ],
-      ["pagtatapos",           [:kEND,      :kEND        ], :expr_end   ],
-      ["natapos",              [:kEND,      :kEND        ], :expr_end   ],
-      ["tapos_na",             [:kEND,      :kEND        ], :expr_end   ],
-      ["natapos_na",           [:kEND,      :kEND        ], :expr_end   ],
-      ["natapos_din",          [:kEND,      :kEND        ], :expr_end   ],
+      ["dulo",                 [:kEND,      :kEND        ], :expr_end   ],
+      ["wakas",                [:kEND,      :kEND        ], :expr_end   ],
+      ["iba",                  [:kELSE,     :kELSE       ], :expr_beg   ],      
       ["kung_hindi",           [:kELSE,     :kELSE       ], :expr_beg   ],
       ["kung_hindi_naman",     [:kELSE,     :kELSE       ], :expr_beg   ],
       ["kapag_hindi",          [:kELSE,     :kELSE       ], :expr_beg   ],
@@ -67,11 +64,16 @@ module RubyParserStuff
       ["at_kapag_hindi_pa",    [:kELSE,     :kELSE       ], :expr_beg   ],
       ["maliban_dito",         [:kELSE,     :kELSE       ], :expr_beg   ],
       ["maliban_sa_mga_ito",   [:kELSE,     :kELSE       ], :expr_beg   ],
+      ["kalagayan",            [:kCASE,     :kCASE       ], :expr_beg   ],
+      ["kaukulan",             [:kCASE,     :kCASE       ], :expr_beg   ],      
       ["sakaling",             [:kCASE,     :kCASE       ], :expr_beg   ],
       ["sakali",               [:kCASE,     :kCASE       ], :expr_beg   ],
       ["kung_sakaling",        [:kCASE,     :kCASE       ], :expr_beg   ],
       ["sakali_na",            [:kCASE,     :kCASE       ], :expr_beg   ],
       ["kung_sakali_na",       [:kCASE,     :kCASE       ], :expr_beg   ],
+      ["matiyak",              [:kENSURE,   :kENSURE     ], :expr_beg   ],
+      ["tiyakin",              [:kENSURE,   :kENSURE     ], :expr_beg   ],
+      ["tiyaking",             [:kENSURE,   :kENSURE     ], :expr_beg   ],
       ["siguraduhing",         [:kENSURE,   :kENSURE     ], :expr_beg   ],
       ["siguraduhin",          [:kENSURE,   :kENSURE     ], :expr_beg   ],
       ["panigurado",           [:kENSURE,   :kENSURE     ], :expr_beg   ],
@@ -86,11 +88,8 @@ module RubyParserStuff
       ["agapan",               [:kRESCUE,   :kRESCUE_MOD ], :expr_mid   ],
       ["hindi",                [:kNOT,      :kNOT        ], :expr_beg   ],
       ["dapat",                [:kTHEN,     :kTHEN       ], :expr_beg   ],
-      ["bibigyan",             [:kYIELD,    :kYIELD      ], :expr_arg   ],
-      ["magbibigay",           [:kYIELD,    :kYIELD      ], :expr_arg   ],
-      ["ibibigay",             [:kYIELD,    :kYIELD      ], :expr_arg   ],
-      ["may_inaasahan",        [:kYIELD,    :kYIELD      ], :expr_arg   ],
-      ["mabibigyan",           [:kYIELD,    :kYIELD      ], :expr_arg   ],
+      ["bigyang_daan",         [:kYIELD,    :kYIELD      ], :expr_arg   ],
+      ["magbigay_daan",        [:kYIELD,    :kYIELD      ], :expr_arg   ],
       ["para_sa",              [:kFOR,      :kFOR        ], :expr_beg   ],
       ["para_ang",             [:kFOR,      :kFOR        ], :expr_beg   ],
       ["self",                 [:kSELF,     :kSELF       ], :expr_end   ],
@@ -167,7 +166,7 @@ module RubyParserStuff
     WORDLIST18.delete "__ENCODING__"
 
     %w[at at_ang
-      sakaling sakali kung_sakaling sakali_na kung_sakali_na
+      kalagayan kaukulan sakaling sakali kung_sakaling sakali_na kung_sakali_na
       ngunit_kapag kung_kapag ngunit_kapag_ang kung_kapag_ang
       para_sa para_ang
       kapag kapag_ang kapag_na_ang kung kung_ang

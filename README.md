@@ -99,15 +99,11 @@ Paggamit ng kondisyon.
 
 ### katapusan
 
-Maari kang gumamit ng mga sumusunod sa pagtatapos ng program
+Maari kang gumamit sa alin sa mga sumusunod sa pagtatapos ng program
 
 	katapusan
-	tapos
-	pagtatapos
-	natapos
-	tapos_na
-	natapos_na
-	natapos_din
+	dulo
+	wakas
 
 Sampol ng paggamit
 
@@ -116,12 +112,13 @@ Sampol ng paggamit
 	  isulat "Mayroon ng laman ang bilang na #{bilang}"
 	kung_hindi
 	  isulat "Wala pang laman ang bilang"
-	tapos_na # o alin sa mga salitang katapusan, tapos, pagtatapos, natapos, natapos_na, natapos_din
+	wakas
 
-###  kung_hindi 
+###  iba 
 
-Kapag ang ekspresyon ay hindi nasunod maaring gumamit ng mga sumusunod
+Kapag ang ekspresyon ay hindi nasunod maaring gumamit sa alin sa mga sumusunod
 
+	iba
 	kung_hindi
 	kung_hindi_naman
 	kapag_hindi
@@ -155,6 +152,8 @@ Kapag mayroon kang ekspresyon na madaming resulta gawa ng mga iba't ibang kondis
 	kung_sakaling
 	sakali_na
 	kung_sakali_na
+	kalagayan
+	kaukulan
 
 Sampol ng paggamit
 
@@ -171,10 +170,13 @@ Sampol ng paggamit
 	  isulat "Magandang araw sa iyo!"
 	katapusan
 
-### siguraduhing
+### tiyakin
 
 Kung mayroon kang ekspresyon na gusto mong masunod kahit ano pa ang kahihinatnan nito, gumamit ng mga sumusunod
 
+	tiyaking
+	matiyak
+	tiyakin
 	siguraduhing
 	siguraduhin
 	panigurado
@@ -186,7 +188,7 @@ Sampol ng paggamit
 	agapan
 	  isulat "Ipagpatuloy..."
 	  itaas "May nasira na na-agapan"
-	siguraduhing
+	tiyaking
 	  isulat "Tapos na"
 	katapusan
 
@@ -216,7 +218,7 @@ Sampol ng paggamit
 	katapusan
 
 	dami = 6
-	browny = MgaAlagangHayop::Aso.new
+	browny = MgaAlagangHayop::Aso.gumawa
 	browny.ikembot_ang_buntot kapag dami >= MgaHayop::KAILANGAN_DAMI_NG_ASO
 
 ### ngunit_kapag
@@ -305,15 +307,12 @@ Sampol ng paggamit
 	
 	sabihin "Ang papel na gagamitin mo ay #{papel}"
 
-### mabibigyan
+### magbigay_daan
 
-Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gumagana pa ang program, gumamit ng mabibigyan
+Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gumagana pa ang program, gumamit ng magbigay_daan
 
-	bibigyan
-	magbibigay
-	ibibigay
-	may_inaasahan
-	mabibigyan
+	magbigay_daan
+	bigyang_daan
 
 Sampol ng paggamit
 
@@ -354,14 +353,25 @@ Sampol ng paggamit
 
 	listahan_ng_mga_prutas = ["mansanas", "mangga", "guava", "santol", "ubas"]
 	para_sa prutas na_nasa listahan_ng_mga_prutas ganito_gawin
-	  sabihin prutas.malaking_titik
+	  sabihin prutas.sa_malaking_titik
 	katapusan
-
-## Ang mga sumusunod ay ipagpapatuloy ...
 
 ### subukang_muli
 
 	subukang_muli
+
+Sampol ng paggamit
+
+	bilang_ng_pagkakamali = 0
+	simula
+	  1 / 0
+	agapan => pagkakamali
+	  bilang_ng_pagkakamali += 1
+	  subukang_muli kapag bilang_ng_pagkakamali < 3
+	  iangat "malubhang pagkakamali"
+	siguraduhing
+	  isulat "Tapos na"
+	katapusan
 
 ### ibalik
 
@@ -465,4 +475,4 @@ Magpadala ng mga kahilingan sa paggawa ng ticket.
 
 ## Lisensya
 
-Masasyusets Institut Ng Tekonolohiya licence (makikita sa LICENSE.txt na file).
+Masasyusets Institut Ng Tekonolohiya License (makikita sa LICENSE.txt na file).
