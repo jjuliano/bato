@@ -8,4 +8,8 @@ class String
   alias_method :sa_malaking_mga_titik, :upcase
   alias_method :sa_maliliit_na_titik, :downcase
   alias_method :sa_maliit_na_mga_titik, :downcase
+  alias_method :igitna, :center
+  alias_method :kagatan, :chomp
+  alias_method :palitan, :replace
+  alias_method :siyasatin, :inspect
 end
