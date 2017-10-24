@@ -19,7 +19,7 @@ Ang kadahilanang ginamit ang pangalang 'bato' ay dahil ang Ruby ay isang uri ng 
 Gumawa ng isang file na kamusta_mundo.bato na may mga sumusunod na nilalaman
 
 	kapag 1 > 0
-	  isulat "Kamusta mundo!"
+	  isulat "Kumusta mundo!"
 	kung_hindi
 	  isulat "Mayroong sira"
 	katapusan
