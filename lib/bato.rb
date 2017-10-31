@@ -1,4 +1,3 @@
-require "bato/version"
+require 'bato/bersiyon'
 
-module Bato
-end
+module Bato; end

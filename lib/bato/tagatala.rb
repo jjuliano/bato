@@ -1,18 +1,12 @@
-# encoding: utf-8
-
 require 'ruby2ruby'
 require 'ruby_parser'
 require 'bato/ruby_parser_patches'
 
 module Bato
-
   class Tagatala
+    def initialize; end
 
-    def initialize
-
-    end
-
-    PASIMULANG_KODIGO = "# encoding: utf-8\nrequire \"bato/core_ext\"\n"
+    PASIMULANG_KODIGO = "# encoding: utf-8\nrequire \"bato/core_ext\"\n".freeze
 
     def sa_ruby(kodigo)
       ruby2ruby = Ruby2Ruby.new
@@ -23,8 +17,5 @@ module Bato
 
       "#{PASIMULANG_KODIGO}#{ruby_kodigo}"
     end
-
   end
-
 end
-

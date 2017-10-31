@@ -1,15 +1,13 @@
-# encoding: utf-8
-
 class String
-  alias_method :baliktad, :reverse
-  alias_method :haba, :length
-  alias_method :sa_malaking_titik, :capitalize
-  alias_method :sa_malalaking_titik, :upcase
-  alias_method :sa_malaking_mga_titik, :upcase
-  alias_method :sa_maliliit_na_titik, :downcase
-  alias_method :sa_maliit_na_mga_titik, :downcase
-  alias_method :igitna, :center
-  alias_method :kagatan, :chomp
-  alias_method :palitan, :replace
-  alias_method :siyasatin, :inspect
+  alias baliktad reverse
+  alias haba length
+  alias sa_malaking_titik capitalize
+  alias sa_malalaking_titik upcase
+  alias sa_malaking_mga_titik upcase
+  alias sa_maliliit_na_titik downcase
+  alias sa_maliit_na_mga_titik downcase
+  alias igitna center
+  alias kagatan chomp
+  alias palitan replace
+  alias siyasatin inspect
 end

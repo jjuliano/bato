@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 class Class
-  alias_method :gumawa, :new
+  alias gumawa new
 end
