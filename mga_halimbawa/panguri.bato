@@ -1,0 +1,13 @@
+klase Pangalan
+  panguri :pangalan
+
+  panuntunang initialize(pangalan)
+    @pangalan = pangalan
+  wakas
+
+  ang ipakitaAngPangalan
+    isulat sarili.pangalan
+  wakas
+wakas
+
+Pangalan.gumawa('Joel').ipakitaAngPangalan
