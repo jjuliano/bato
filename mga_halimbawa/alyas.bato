@@ -1,0 +1,9 @@
+bilang Hayop
+  ang aso
+    iprint 'si browny ay mabait!'
+  wakas
+  alyas browny aso
+wakas
+
+hayop = Hayop.gumawa
+hayop.browny

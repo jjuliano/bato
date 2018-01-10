@@ -4,6 +4,6 @@ papel = sakaling panulat_mo
   ay "lapis" dapat "bond paper"
   ay "ballpen" dapat "dilaw na papel"
   maliban_sa_mga_ito "intermediate paper"
-katapusan
+wakas
 
-sabihin "Ang papel na gagamitin mo ay #{papel}"
+iprint "Ang papel na gagamitin mo ay #{papel}"

@@ -67,6 +67,7 @@ module RubyParserStuff
       ['siguraduhin',          %i[kENSURE kENSURE], :expr_beg],
       ['panigurado',           %i[kENSURE kENSURE], :expr_beg],
       ['modyul',               %i[kMODULE kMODULE], :expr_beg],
+      ['grupo',                %i[kMODULE kMODULE], :expr_beg],
       ['ngunit_kapag',         %i[kELSIF kELSIF], :expr_beg],
       ['kung_kapag',           %i[kELSIF kELSIF], :expr_beg],
       ['ngunit_kapag_ang',     %i[kELSIF kELSIF], :expr_beg],
@@ -82,7 +83,7 @@ module RubyParserStuff
       ['magbigay_daan',        %i[kYIELD kYIELD], :expr_arg],
       ['para_sa',              %i[kFOR kFOR], :expr_beg],
       ['para_ang',             %i[kFOR kFOR], :expr_beg],
-      ['self',                 %i[kSELF kSELF], :expr_end],
+      ['sariling',             %i[kSELF kSELF], :expr_end],
       ['sarili',               %i[kSELF kSELF], :expr_end],
       ['mali',                 %i[kFALSE kFALSE], :expr_end],
       ['subukang_muli',        %i[kRETRY kRETRY], :expr_end],
@@ -97,6 +98,9 @@ module RubyParserStuff
       ['magbigay',             %i[kRETURN kRETURN], :expr_mid],
       ['magbigay_nang',        %i[kRETURN kRETURN], :expr_mid],
       ['tama',                 %i[kTRUE kTRUE], :expr_end],
+      ['totoo',                %i[kTRUE kTRUE], :expr_end],
+      ['tunay',                %i[kTRUE kTRUE], :expr_end],
+      ['katotohanan',          %i[kTRUE kTRUE], :expr_end],
       ['kapag',                %i[kIF kIF_MOD], :expr_beg],
       ['kapag_ang',            %i[kIF kIF_MOD], :expr_beg],
       ['kapag_na_ang',         %i[kIF kIF_MOD], :expr_beg],
@@ -108,6 +112,7 @@ module RubyParserStuff
       ['tanggalin',            %i[kUNDEF kUNDEF], :expr_fname],
       ['magtanggal',           %i[kUNDEF kUNDEF], :expr_fname],
       ['ihinto',               %i[kBREAK kBREAK], :expr_mid],
+      ['hinto',                %i[kBREAK kBREAK], :expr_mid],
       ['sa',                   %i[kIN kIN], :expr_beg],
       ['sa_loob_ng',           %i[kIN kIN], :expr_beg],
       ['nasa',                 %i[kIN kIN], :expr_beg],
@@ -139,6 +144,7 @@ module RubyParserStuff
       ['simula',               %i[kBEGIN kBEGIN], :expr_beg],
       ['simulan',              %i[kBEGIN kBEGIN], :expr_beg],
       ['__LINE__',             %i[k__LINE__ k__LINE__], :expr_end],
+      ['bilang',               %i[kCLASS kCLASS], :expr_class],
       ['klase',                %i[kCLASS kCLASS], :expr_class],
       ['__FILE__',             %i[k__FILE__ k__FILE__], :expr_end],
       ['END',                  %i[klEND klEND], :expr_end],
@@ -167,7 +173,7 @@ module RubyParserStuff
        para_sa para_ang
        kapag kapag_ang kapag_na_ang kung kung_ang
        sa sa_loob_ng nasa na_nasa
-       modyul
+       modyul grupo
        o o_ang
        malibang maliban_na maliban_ang
        hanggang hanggang_ang mapa_hanggang

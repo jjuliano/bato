@@ -1,6 +1,6 @@
 # Bato
 
-Ang 'Bato' ay ang unang programming language sa wikang Tagalog.
+Ang 'Bato' ay ang unang programming language sa wikang Filipino.
 
 ## Pagtatalaga
 
@@ -11,7 +11,7 @@ at pagkatapos maitalaga ang Ruby, i-run naman ito
 
 ## Bakit Bato?
 
-Ang 'bato' ay hango sa [Ruby Programming Language](http://www.ruby-lang.org/) na may Tagalog na sintaks.
+Ang 'bato' ay hango sa [Ruby Programming Language](http://www.ruby-lang.org/) na may Filipino sintaks.
 Ang kadahilanang ginamit ang pangalang 'bato' ay dahil ang Ruby ay isang uri ng bato.
 
 ## Ang unang program
@@ -19,10 +19,10 @@ Ang kadahilanang ginamit ang pangalang 'bato' ay dahil ang Ruby ay isang uri ng 
 Gumawa ng isang file na kamusta_mundo.bato na may mga sumusunod na nilalaman
 
     kapag 1 > 0
-      isulat "Kumusta mundo!"
+      iprint "Kumusta mundo!"
     kung_hindi
-      isulat "Mayroong sira"
-    katapusan
+      iprint "Mayroong sira"
+    wakas
 
 at pa-andarin ang program sa pamamagitan ng
 
@@ -32,7 +32,7 @@ at pa-andarin ang program sa pamamagitan ng
 
 ### Pagsusulat
 
-    "Ito ay mga serye ng mga sulat sa wikang Tagalog"
+    "Ito ay mga serye ng mga sulat sa wikang Filipino"
     <<-KATAPUSAN
       mga salita
       na nahahati
@@ -59,13 +59,13 @@ Paggamit ng kondisyon.
       "ok lang"
     kung_hindi
       "wala lang"
-    katapusan
+    wakas
 
-    kung_sakaling bilang
+    kung_sakaling halaga
     pagka 5 dapat "lima"
     pagka 4 dapat "apat"
     kung_hindi "wala"
-    katapusan
+    wakas
 
 ### Pamamaraan sa pagkakamali
 
@@ -78,40 +78,39 @@ Paggamit ng kondisyon.
       subukang_muli kapag bilang_ng_pagkakamali < 3
       iangat "malubhang pagkakamali"
     siguraduhing
-      isulat "Tapos na"
-    katapusan
+      iprint "Tapos na"
+    wakas
 
 ### Panuntunan
 
-    panuntunang sabihinAngPangalan(pangalan = wala)
+    ang iprintAngPangalan(pangalan = wala)
       kapag pangalan != wala
-        isulat "Magandang araw sa iyo #{pangalan}!"
+        iprint "Magandang araw sa iyo #{pangalan}!"
       kung_hindi
-        isulat "Magandang araw!"
-      katapusan
-    katapusan
+        iprint "Magandang araw!"
+      wakas
+    wakas
 
-    sabihinAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
-    sabihinAngPangalan       # => "Magandang araw!"
-
+    iprintAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
+    iprintAngPangalan         # => "Magandang araw!"
 
 ## Paggamit ng mga ekspresyon ng mga salita sa program
 
-### katapusan
+### wakas
 
 Maari kang gumamit sa alin sa mga sumusunod sa pagtatapos ng program
 
-    katapusan
-    dulo
     wakas
+    dulo
+    katapusan
 
 Sampol ng paggamit
 
     bilang = 0
     kapag bilang > 1
-      isulat "Mayroon ng laman ang bilang na #{bilang}"
+      iprint "Mayroon ng laman ang bilang na #{bilang}"
     kung_hindi
-      isulat "Wala pang laman ang bilang"
+      iprint "Wala pang laman ang bilang"
     wakas
 
 ###  kung_iba
@@ -139,10 +138,10 @@ Sampol ng paggamit
 
     pangalan_mo = "Maliksi"
     kapag_ang pangalan_mo == "Maliksi"
-      isulat "Ikaw ay si #{pangalan_mo}!"
+      iprint "Ikaw ay si #{pangalan_mo}!"
     kung_hindi_naman
-      isulat "Magandang araw sa iyo #{pangalan_mo}!"
-    katapusan
+      iprint "Magandang araw sa iyo #{pangalan_mo}!"
+    wakas
 
 ### sakali
 
@@ -162,14 +161,14 @@ Sampol ng paggamit
 
     sakaling pangalan_mo
     ay "Maliksi"
-      isulat "Ikaw ay si Maliksi!"
+      iprint "Ikaw ay si Maliksi!"
     ay "Matipuno"
-      isulat "Ikaw ay si Matipuno!"
+      iprint "Ikaw ay si Matipuno!"
     ay "Mabait"
-      isulat "Ikaw ay si Mabait!"
+      iprint "Ikaw ay si Mabait!"
     maliban_dito
-      isulat "Magandang araw sa iyo!"
-    katapusan
+      iprint "Magandang araw sa iyo!"
+    wakas
 
 ### tiyakin
 
@@ -187,40 +186,41 @@ Sampol ng paggamit
     simulan
       itaas "May sira!"
     agapan
-      isulat "Ipagpatuloy..."
+      iprint "Ipagpatuloy..."
       itaas "May nasira na na-agapan"
     tiyaking
-      isulat "Tapos na"
-    katapusan
+      iprint "Tapos na"
+    wakas
 
-### modyul
+### grupo
 
-Ang modyul ay ang lalagyanan ng mga klase sa iyong program
+Ang grupo ay ang lalagyanan ng mga kabilang na klase sa iyong program
 
-    modyul
+    grupo
 
 Sampol ng paggamit
 
-    modyul MgaAlagangHayop
-      KAILANGAN_DAMI_NG_ASO = 5
-      klase Aso
-        panuntunan tahol
-          sabihin "Woof..."
-        katapusan
+    grupo Hayop
+      KABUUAN = 5
 
-        panuntunan kumanin
-          sabihin "..."
-        katapusan
+      bilang Aso
+        ang tahol
+          iprint "Woof..."
+        wakas
 
-        panuntunan ikembot_ang_buntot
-          sabihin "Ginagawa ko ito dahil masaya ako!"
-        katapusan
-      katapusan
-    katapusan
+        ang kumanin
+          iprint "..."
+        wakas
+
+        ang ikembot_ang_buntot
+          iprint "Ginagawa ko ito dahil masaya ako!"
+        wakas
+      wakas
+    wakas
 
     dami = 6
-    browny = MgaAlagangHayop::Aso.gumawa
-    browny.ikembot_ang_buntot kapag dami >= MgaHayop::KAILANGAN_DAMI_NG_ASO
+    browny = Hayop::Aso.gumawa
+    browny.ikembot_ang_buntot kapag dami >= Hayop::KABUUAN
 
 ### ngunit_kapag
 
@@ -235,20 +235,20 @@ Sampol ng paggamit
 
     pangalan_mo = "Masipag"
     kapag_ang pangalan_mo == "Matipuno"
-      sabihin "Ikaw ay si Matipuno!"
+      iprint "Ikaw ay si Matipuno!"
     ngunit_kapag_ang pangalan_mo == "Masipag"
-      sabihin "Ikaw ay si Masipag!"
+      iprint "Ikaw ay si Masipag!"
     maliban_sa_mga_ito
-      sabihin "Wala kang rekord saamin!"
-    katapusan
+      iprint "Wala kang rekord saamin!"
+    wakas
 
-### panuntunan
+### ang
 
-Ang panuntunan ay may kalakip na pangalan upang ito ay matawag sa program
+Ang ang ay may kalakip na pangalan upang ito ay matawag sa program
 
     ang
-    panuntunang
     panuntunan
+    panuntunang
 
 Sampol ng paggamit
 
@@ -259,12 +259,12 @@ Sampol ng paggamit
       baitang  = estudyante[:baitang]
       seksiyon = estudyante[:seksiyon]
 
-      sabihin <<-KATAPUSAN
+      iprint <<-KATAPUSAN
         Pangalan: #{pangalan}
-      Edad:     #{edad}
-      Tirahan:  #{tirahan}
-      Baitang:  #{baitang}
-      Seksiyon: #{seksiyon}
+        Edad:     #{edad}
+        Tirahan:  #{tirahan}
+        Baitang:  #{baitang}
+        Seksiyon: #{seksiyon}
       KATAPUSAN
     wakas
 
@@ -288,8 +288,8 @@ Sampol ng paggamit
     simulan
       1 / 0
     agapan
-      sabihin "Hindi ito posible!"
-    katapusan
+      iprint "Hindi ito posible!"
+    wakas
 
 ### dapat
 
@@ -305,9 +305,9 @@ Sampol ng paggamit
       ay "lapis" dapat "bond paper"
       ay "ballpen" dapat "dilaw na papel"
       maliban_sa_mga_ito "intermediate paper"
-    katapusan
+    wakas
 
-    sabihin "Ang papel na gagamitin mo ay #{papel}"
+    iprint "Ang papel na gagamitin mo ay #{papel}"
 
 ### magbigay_daan
 
@@ -318,23 +318,23 @@ Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gu
 
 Sampol ng paggamit
 
-    panuntunan gumawaNgID
-      isulat "------------------------------------------"
+    ang gumawaNgID
+      iprint "------------------------------------------"
       magbigay_daan
-      isulat "------------------------------------------"
-    katapusan
+      iprint "------------------------------------------"
+    wakas
 
-    panuntunan ID(impormasyon = {})
+    ang ID(impormasyon = {})
       gumawaNgID na_ganito
-        sabihin <<-KATAPUSAN
-      Pangalan: #{impormasyon[:pangalan]}
-      Edad:     #{impormasyon[:edad]}
-      Tirahan:  #{impormasyon[:tirahan]}
-      Baitang:  #{impormasyon[:baitang]}
-      Seksiyon: #{impormasyon[:seksiyon]}
+        iprint <<-KATAPUSAN
+          Pangalan: #{impormasyon[:pangalan]}
+          Edad:     #{impormasyon[:edad]}
+          Tirahan:  #{impormasyon[:tirahan]}
+          Baitang:  #{impormasyon[:baitang]}
+          Seksiyon: #{impormasyon[:seksiyon]}
         KATAPUSAN
-      katapusan
-    katapusan
+      wakas
+    wakas
 
     ID({
       pangalan: "Maliksi Batubalani",
@@ -355,8 +355,8 @@ Sampol ng paggamit
 
     listahan_ng_mga_prutas = ["mansanas", "mangga", "guava", "santol", "ubas"]
     para_sa prutas na_nasa listahan_ng_mga_prutas ganito_gawin
-      sabihin prutas.sa_malaking_titik
-    katapusan
+      iprint prutas.sa_malaking_titik
+    wakas
 
 ### subukang_muli
 
@@ -374,12 +374,12 @@ Sampol ng paggamit
       subukang_muli kapag bilang_ng_pagkakamali < 3
       iangat "malubhang pagkakamali"
     siguraduhing
-      isulat "Tapos na"
-    katapusan
+      iprint "Tapos na"
+    wakas
 
 ### ibalik
 
-Kapag mayroon kang ibabalik na resulta sa nagtawag ng panuntunan
+Kapag mayroon kang ibabalik na resulta sa nagtawag ng ang
 
     ibalik
     ibalik_ang
@@ -394,10 +394,10 @@ Kapag mayroon kang ibabalik na resulta sa nagtawag ng panuntunan
 
 Sampol ng paggamit
 
-    panuntunan magdagdag_ng_isa(halaga)
+    ang magdagdag_ng_isa(halaga)
       idadagdag = halaga + 1
       ibalik_ang halaga
-    katapusan
+    wakas
 
 ### kapag
 
@@ -412,10 +412,57 @@ Ginagamit ang kapag kung meron kang kondisyon sa iyong ekspresyon
 Sampol ng paggamit
 
     kapag_ang 1 > 0
-      sabihin "mas madami!"
+      iprint "mas madami!"
     kung_iba
-      sabihin "may sira"
-    katapusan
+      iprint "may sira"
+    wakas
+
+### bilang
+
+  Ang bilang ay ang pagsasabilang ng isang kaukulang klasipikasyon
+
+    bilang
+
+    grupo Tinapay
+      bilang Donut
+        ang flavor
+          iprint 'Strawberry!'
+        wakas
+      wakas
+    wakas
+
+    tinapay = Tinapay::Donut.gumawa
+    tinapay.flavor
+
+### habang
+
+  Gumamit ng habang kung may hinihintay pa na resulta, kondisyon o pangyayari
+
+    habang
+    habang_ang
+
+    may_buhay = totoo
+
+    habang may_buhay
+      iprint 'may pag-asa!'
+      hinto
+    wakas
+
+### alyas
+
+  Gumamit ng alyas kung kailangan mo tawagin sa ibang pangalan ang iyong panuntunan
+
+    alyas
+
+    bilang Hayop
+      ang aso
+        iprint 'si browny ay mabait!'
+      wakas
+      alyas browny aso
+    wakas
+
+    hayop = Hayop.gumawa
+    hayop.browny
 
 ## Patuloy na ginagawa ang dokumento para sa mga sumusunod...
 
@@ -484,22 +531,9 @@ Sampol ng paggamit
     at
     at_ang
 
-### simula
+### simulan
 
-    simula
-
-### klase
-
-    klase
-
-### habang
-
-    habang
-    habang_ang
-
-### alyas
-
-    alyas
+    simulan
 
 ## Pagtulong sa pagdedevelop ng Bato
 

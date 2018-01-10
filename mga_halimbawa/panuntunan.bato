@@ -1,18 +1,18 @@
-panuntunan gumawaNgID(estudyante = {})
+ang gumawaNgID(estudyante = {})
   pangalan = estudyante[:pangalan]
   edad = estudyante[:edad]
   tirahan = estudyante[:tirahan]
   baitang = estudyante[:baitang]
   seksiyon = estudyante[:seksiyon]
   
-  sabihin <<-KATAPUSAN
+  iprint <<-KATAPUSAN
   	Pangalan: #{pangalan}
 	Edad:     #{edad}
 	Tirahan:  #{tirahan}
 	Baitang:  #{baitang}
 	Seksiyon: #{seksiyon}
   KATAPUSAN
-katapusan
+wakas
 
 gumawaNgID({
   pangalan: "Maliksi Batubalani",

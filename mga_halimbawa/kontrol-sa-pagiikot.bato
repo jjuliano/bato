@@ -1,45 +1,45 @@
-# each loop
+# isaisahin loop
 ['a','b','c','d'].isaisahin na_ganito |titik|
-	isulat "Ang titik ay #{titik}"
-katapusan
+  iprint "Ang titik ay #{titik}"
+wakas
 
-# each loop on range
-(1..10).isaisahin na_ganito |bilang|
-	isulat "Ang bilang ay #{bilang}"
-katapusan
+# isaisahin loop on range
+(1..10).isaisahin na_ganito |numero|
+  iprint "Ang numero ay #{numero}"
+wakas
 
 # while loop
-bilang = 1
-habang bilang < 10 ganito
-	isulat "Ang bilang ay #{bilang} na"
-	bilang += 1
-katapusan
+numero = 1
+habang numero < 10 ganito
+  iprint "Ang numero ay #{numero} na"
+  numero += 1
+wakas
 
 # begin while
-bilang = 0
-panghuling_bilang = 5
+numero = 0
+panghuling_numero = 5
 simula
-	isulat "Ang bilang ay #{bilang} na"
-	bilang += 1
-katapusan habang bilang < panghuling_bilang
+  iprint "Ang numero ay #{numero} na"
+  numero += 1
+wakas habang numero < panghuling_numero
 
 # until
-bilang = 0
-panghuling_bilang = 5
-hanggang bilang > panghuling_bilang ganito
-	isulat "Ang bilang ay #{bilang} na"
-	bilang += 1
-katapusan
+numero = 0
+panghuling_numero = 5
+hanggang numero > panghuling_numero ganito
+  iprint "Ang numero ay #{numero} na"
+  numero += 1
+wakas
 
 # begin until
-bilang = 0
-panghuling_bilang = 5
+numero = 0
+panghuling_numero = 5
 simula
-	isulat "Ang bilang ay #{bilang} na"
-	bilang += 1
-katapusan hanggang bilang < panghuling_bilang
+  iprint "Ang numero ay #{numero} na"
+  numero += 1
+wakas hanggang numero < panghuling_numero
 
 # for loop
-para_ang bilang na_nasa 0..5
-   isulat "Ang bilang ay #{bilang} na"
-katapusan
+para_ang numero na_nasa 0..5
+   iprint "Ang numero ay #{numero} na"
+wakas

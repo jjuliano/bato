@@ -1,5 +1,5 @@
 kapag 1 > 0
-  isulat "Kumusta mundo!"
+  iprint "Kumusta mundo!"
 kung_hindi
-  isulat "Mayroong sira"
-katapusan
+  iprint "Mayroong sira"
+wakas

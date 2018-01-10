@@ -1,37 +1,37 @@
 # Bato Programming Language (https://github.com/jjuliano/bato)
 
-modyul TimeBomb
+grupo TimeBomb
   BILANG = 5
-  klase Bomba
-    panuntunan tik
-      sabihin 'tik'
-    katapusan
+  bilang Bomba
+    ang tik
+      iprint 'tik'
+    wakas
 
-    panuntunan tok
-      sabihin 'tok'
-    katapusan
-    
-    panuntunan sabog
-      sabihin 'kaboom!'
-    katapusan
-  katapusan
-katapusan
+    ang tok
+      iprint 'tok'
+    wakas
+
+    ang sabog
+      iprint 'kaboom!'
+    wakas
+  wakas
+wakas
 
 pasabog = TimeBomb::Bomba.gumawa
 
-bilang = 1
-habang bilang <= TimeBomb::BILANG ganito
-	isulat "#{bilang}"
+numero = 1
+habang numero <= TimeBomb::BILANG ganito
+	iprint "#{numero}"
 
-  kapag (bilang == TimeBomb::BILANG)
+  kapag (numero == TimeBomb::BILANG)
     pasabog.sabog
-  ngunit_kapag_ang (bilang % 2) != 0
+  ngunit_kapag_ang (numero % 2) != 0
     pasabog.tik
-  ngunit_kapag_ang (bilang % 2) == 0
+  ngunit_kapag_ang (numero % 2) == 0
     pasabog.tok
-  katapusan
+  wakas
 
   sleep 1
-	bilang += 1
-katapusan
+	numero += 1
+wakas
 

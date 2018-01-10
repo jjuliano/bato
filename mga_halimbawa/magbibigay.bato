@@ -1,22 +1,22 @@
-panuntunan gumawaNgID
-  isulat "------------------------------------------"
+ang gumawaNgID
+  iprint "------------------------------------------"
   
   magbigay_daan
   
-  isulat "------------------------------------------"
-katapusan
+  iprint "------------------------------------------"
+wakas
 
-panuntunan ID(impormasyon = {})
+ang ID(impormasyon = {})
   gumawaNgID na_ganito
-    sabihin <<-KATAPUSAN
+    iprint <<-KATAPUSAN
   Pangalan: #{impormasyon[:pangalan]}
   Edad:     #{impormasyon[:edad]}
   Tirahan:  #{impormasyon[:tirahan]}
   Baitang:  #{impormasyon[:baitang]}
   Seksiyon: #{impormasyon[:seksiyon]}
     KATAPUSAN
-  katapusan
-katapusan
+  wakas
+wakas
 
 ID({
   pangalan: "Maliksi Batubalani",

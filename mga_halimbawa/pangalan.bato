@@ -1,10 +1,10 @@
-panuntunang sabihinAngPangalan(pangalan = wala)
+ang iprintAngPangalan(pangalan = wala)
   kapag pangalan != wala
-    isulat "Magandang araw sa iyo #{pangalan}!"
+    iprint "Magandang araw sa iyo #{pangalan}!"
   kung_hindi
-    isulat "Magandang araw!"
-  katapusan
-katapusan
+    iprint "Magandang araw!"
+  wakas
+wakas
 
-sabihinAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
-sabihinAngPangalan 		   # => "Magandang araw!"
+iprintAngPangalan "Maria" # => "Magandang araw sa iyo Maria!"
+iprintAngPangalan # => "Magandang araw!"

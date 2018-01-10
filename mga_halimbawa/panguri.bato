@@ -1,12 +1,12 @@
-klase Pangalan
+bilang Pangalan
   panguri :pangalan
 
-  panuntunang initialize(pangalan)
+  ang initialize(pangalan)
     @pangalan = pangalan
   wakas
 
   ang ipakitaAngPangalan
-    isulat sarili.pangalan
+    iprint sariling.pangalan
   wakas
 wakas
 

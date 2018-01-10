@@ -1,19 +1,19 @@
-modyul MgaAlagangHayop
+grupo MgaAlagangHayop
   KAILANGAN_DAMI_NG_ASO = 5
-  klase Aso
-    panuntunan tahol
-      sabihin "Woof..."
-    katapusan
+  bilang Aso
+    ang tahol
+      iprint "Woof..."
+    wakas
 
-    panuntunan kumanin
-      sabihin "..."
-    katapusan
+    ang kumanin
+      iprint "..."
+    wakas
 
-    panuntunan ikembot_ang_buntot
-      sabihin "Ginagawa ko ito dahil masaya ako!"
-    katapusan
-  katapusan  
-katapusan
+    ang ikembot_ang_buntot
+      iprint "Ginagawa ko ito dahil masaya ako!"
+    wakas
+  wakas  
+wakas
 
 dami = 6
 browny = MgaAlagangHayop::Aso.gumawa

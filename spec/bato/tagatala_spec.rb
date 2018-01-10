@@ -83,7 +83,7 @@ isalaysay_ang 'Tagatala' do
           subukang_muli
           iangat pagkakamali, pagkakamali.iulat
         siguraduhing
-          isulat "Katapusan"
+          iprint "Katapusan"
         katapusan').should be_like(pasimulang_kodigo +
         'begin
           (1 / 0)
@@ -91,15 +91,15 @@ isalaysay_ang 'Tagatala' do
           retry
           iangat(pagkakamali, pagkakamali.iulat)
         ensure
-          isulat("Katapusan")
+          iprint("Katapusan")
         end')
     end
   end
 
   isalaysay_ang 'pamamaraan sa Kernel' do
-    ito_ang "ekspresyon ng pagsusulat gamit ang 'isulat'" do
-      tagatala.sa_ruby("isulat 'abc'").should ==
-        pasimulang_kodigo + 'isulat("abc")'
+    ito_ang "ekspresyon ng pagsusulat gamit ang 'iprint'" do
+      tagatala.sa_ruby("iprint 'abc'").should ==
+        pasimulang_kodigo + 'iprint("abc")'
     end
   end
 
