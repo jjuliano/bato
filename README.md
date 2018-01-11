@@ -104,7 +104,7 @@ Maari kang gumamit sa alin sa mga sumusunod sa pagtatapos ng program
     dulo
     katapusan
 
-Sampol ng paggamit
+Sampol
 
     bilang = 0
     kapag bilang > 1
@@ -134,7 +134,7 @@ Kapag ang ekspresyon ay hindi nasunod maaring gumamit sa alin sa mga sumusunod
     maliban_dito
     maliban_sa_mga_ito
 
-Sampol ng paggamit
+Sampol
 
     pangalan_mo = "Maliksi"
     kapag_ang pangalan_mo == "Maliksi"
@@ -155,7 +155,7 @@ Kapag mayroon kang ekspresyon na madaming resulta gawa ng mga iba't ibang kondis
     kalagayan
     kaukulan
 
-Sampol ng paggamit
+Sampol
 
     pangalan_mo = "Mabait"
 
@@ -181,7 +181,7 @@ Kung mayroon kang ekspresyon na gusto mong masunod kahit ano pa ang kahihinatnan
     siguraduhin
     panigurado
 
-Sampol ng paggamit
+Sampol
 
     simulan
       itaas "May sira!"
@@ -198,7 +198,7 @@ Ang grupo ay ang lalagyanan ng mga kabilang na klase sa iyong program
 
     grupo
 
-Sampol ng paggamit
+Sampol
 
     grupo Hayop
       KABUUAN = 5
@@ -219,7 +219,7 @@ Sampol ng paggamit
     wakas
 
     dami = 6
-    browny = Hayop::Aso.gumawa
+    browny = Hayop::Aso.kumatawan
     browny.ikembot_ang_buntot kapag dami >= Hayop::KABUUAN
 
 ### ngunit_kapag
@@ -231,7 +231,7 @@ Gumamit ng ngunit_kapag kapag mayroon ka pang kondisyon maliban sa nauna ng kond
     ngunit_kapag_ang
     kung_kapag_ang
 
-Sampol ng paggamit
+Sampol
 
     pangalan_mo = "Masipag"
     kapag_ang pangalan_mo == "Matipuno"
@@ -250,7 +250,7 @@ Ang ang ay may kalakip na pangalan upang ito ay matawag sa program
     panuntunan
     panuntunang
 
-Sampol ng paggamit
+Sampol
 
     ang id(estudyante = {})
       pangalan = estudyante[:pangalan]
@@ -283,7 +283,7 @@ Ang agapan ay ginagamit kung mayroon maaaring mangyaring pagkakamali na gusto mo
     iligtas
     agapan
 
-Sampol ng paggamit
+Sampol
 
     simulan
       1 / 0
@@ -297,7 +297,7 @@ Kapag mayroon kang ekspresyon na mayroong inaasahan na resulta, gumamit ng dapat
 
     dapat
 
-Sampol ng paggamit
+Sampol
 
     panulat_mo = "lapis"
 
@@ -316,7 +316,7 @@ Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gu
     magbigay_daan
     bigyang_daan
 
-Sampol ng paggamit
+Sampol
 
     ang gumawaNgID
       iprint "------------------------------------------"
@@ -351,7 +351,7 @@ Kapag may listahan na nais mong isa isahin, gumamit ng para_sa
     para_sa
     para_ang
 
-Sampol ng paggamit
+Sampol
 
     listahan_ng_mga_prutas = ["mansanas", "mangga", "guava", "santol", "ubas"]
     para_sa prutas na_nasa listahan_ng_mga_prutas ganito_gawin
@@ -364,7 +364,7 @@ Ginagamit ang subukang_muli upang umikot muli ang ekspresyon kung may sirang nan
 
     subukang_muli
 
-Sampol ng paggamit
+Sampol
 
     bilang_ng_pagkakamali = 0
     simula
@@ -392,7 +392,7 @@ Kapag mayroon kang ibabalik na resulta sa nagtawag ng ang
     magbigay
     magbigay_nang
 
-Sampol ng paggamit
+Sampol
 
     ang magdagdag_ng_isa(halaga)
       idadagdag = halaga + 1
@@ -409,7 +409,7 @@ Ginagamit ang kapag kung meron kang kondisyon sa iyong ekspresyon
     kung
     kung_ang
 
-Sampol ng paggamit
+Sampol
 
     kapag_ang 1 > 0
       iprint "mas madami!"
@@ -419,9 +419,11 @@ Sampol ng paggamit
 
 ### bilang
 
-  Ang bilang ay ang pagsasabilang ng isang kaukulang klasipikasyon
+Ang bilang ay ang pagsasabilang ng isang kaukulang klasipikasyon
 
     bilang
+
+Sampol
 
     grupo Tinapay
       bilang Donut
@@ -431,15 +433,18 @@ Sampol ng paggamit
       wakas
     wakas
 
-    tinapay = Tinapay::Donut.gumawa
+    tinapay = Tinapay::Donut.kumatawan
     tinapay.flavor
+    => 'Strawberry!'
 
 ### habang
 
-  Gumamit ng habang kung may hinihintay pa na resulta, kondisyon o pangyayari
+Gumamit ng habang kung may hinihintay pa na resulta, kondisyon o pangyayari
 
     habang
     habang_ang
+
+Sampol
 
     may_buhay = totoo
 
@@ -447,12 +452,15 @@ Sampol ng paggamit
       iprint 'may pag-asa!'
       hinto
     wakas
+    => 'may pag-asa!'
 
 ### alyas
 
-  Gumamit ng alyas kung kailangan mo tawagin sa ibang pangalan ang iyong panuntunan
+Gumamit ng alyas kung kailangan mo tawagin sa ibang pangalan ang iyong panuntunan
 
     alyas
+
+Sampol
 
     bilang Hayop
       ang aso
@@ -461,43 +469,124 @@ Sampol ng paggamit
       alyas browny aso
     wakas
 
-    hayop = Hayop.gumawa
+    hayop = Hayop.kumatawan
     hayop.browny
-
-## Patuloy na ginagawa ang dokumento para sa mga sumusunod...
+    => 'si browny ay mabait!'
 
 ### nakatukoy?
+
+Ang nakatukoy? ay ginagamit kung kailangan malaman kung umiiral ang isang grupo o klase.
 
     nakatukoy?
     nakasaad?
 
+Sampol
+
+    grupo Manggagawa
+      bilang Magsasaka
+        ang pananim
+          ['sibuyas', 'kamatis', 'sili', 'palay', 'mais'].isaisahin na_ganito |pananim|
+            iprint "Mag tatanim ng #{pananim} ngayong panahon"
+          wakas
+        wakas
+      wakas
+    wakas
+
+    kung nakatukoy?(Manggagawa::Magsasaka)
+      iprint 'May nakatukoy!'
+    wakas
+
 ### tanggalin
+
+Ginagamit ang tanggalin kung may tatanggaling panuntunan sa isang klase
 
     tanggalin
     magtanggal
 
+Sampol
+
+    grupo Hayop
+      bilang Aso
+        ang tahol
+          iprint 'baw waw!'
+        wakas
+      wakas
+    wakas
+
+    bilang Pusa < Hayop::Aso
+      tanggalin tahol
+      ang meow
+        iprint 'meow wahu!'
+      wakas
+    wakas
+
+    pusa = Pusa.kumatawan
+
+    simulan
+      pusa.tahol
+    agapan => pagkakamali
+      iprint "ang pagkakamali ay '#{pagkakamali}'"
+    wakas
+
 ### ihinto
 
+Gumamit ng 'hinto' kung may nais kang matapos na kondisyon gamit ang 'habang'
+
     ihinto
+    hinto
+
+Sampol
+
+    nakamit = mali
+
+    habang nakamit == mali
+      iprint 'hindi pa nakakamit!'
+      hinto
+    wakas
+
+    iprint 'nakamit na!'
 
 ### sa
+
+Ginagamit ang 'sa' kung nais mong matukoy ang kasulukuyang listahan
 
     sa
     sa_loob_ng
     nasa
     na_nasa
 
+Sampol
+
+  Tignan ang [para_sa](#para_sa)
+
 ### ganito
+
+Ginagamit ang 'ganito' kung nais mong i konteksto ang kasulukuyang listahan
 
     na_ganito
     nang_ganito
     ganito
 
+Sampol
+
+  Tignan ang [magbigay_daan](#magbigay_daan), [nakatukoy?](#nakatukoy?)
+
 ### hanggang
+
+Ang 'hanggang' ay magpapatuloy tumakbo hanggang maabot ang tamang kundisyon.
 
     hanggang
     hanggang_ang
     mapa_hanggang
+
+Sampol
+
+		numero = 0
+		panghuling_numero = 5
+		simula
+		  iprint "Ang numero ay #{numero} na"
+		  numero += 1
+		wakas hanggang numero < panghuling_numero
 
 ### maliban_na
 
@@ -505,35 +594,32 @@ Sampol ng paggamit
     maliban_na
     maliban_ang
 
+Sampol
+
+    mga_persona = [
+      { pangalan: 'Gener', kasarian: 'lalaki' },
+      { pangalan: 'Karmen', kasarian: 'babae' }
+    ]
+
+    mga_persona.isaisahin ng_ganito |tao|
+      malibang tao[:kasarian] == 'lalaki'
+        iprint "si #{tao[:pangalan]} ay babae!"
+      maliban_dito
+        iprint "si #{tao[:pangalan]} ay lalaki!"
+      wakas
+    wakas
+
 ### o
+
+Ang 'o' ay ginagamit upang piliin ang nagsasauli ng tama.
 
     o
     o_ang
 
-### kasunod
+Sampol
 
-    sumunod
-    kasunod
-
-### pagka
-
-    pagka
-    pagka_ang
-
-### ulitin
-
-    ulitin
-    at_ulitin
-    uliting_muli
-
-### at
-
-    at
-    at_ang
-
-### simulan
-
-    simulan
+    totoo o mali
+    => totoo
 
 ## Pagtulong sa pagdedevelop ng Bato
 

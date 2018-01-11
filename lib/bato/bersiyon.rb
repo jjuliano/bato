@@ -1,3 +1,3 @@
 module Bato
-  BERSIYON = '0.0.8'.freeze
+  BERSIYON = '0.0.9'.freeze
 end

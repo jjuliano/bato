@@ -1,0 +1,23 @@
+grupo Hayop
+  bilang Aso
+    ang tahol
+      iprint 'baw waw!'
+    wakas
+  wakas
+wakas
+
+bilang Pusa < Hayop::Aso
+  tanggalin tahol
+
+  ang meow
+    iprint 'meow wahu!'
+  wakas
+wakas
+
+pusa = Pusa.kumatawan
+
+simulan
+  pusa.tahol
+agapan => pagkakamali
+  iprint "ang pagkakamali ay '#{pagkakamali}'"
+wakas

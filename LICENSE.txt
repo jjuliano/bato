@@ -1,4 +1,4 @@
-Copyright (c) 2016 Joel Bryan Juliano
+Copyright (c) 2016-2018 Joel Bryan Juliano
 
 MIT License
 

@@ -1,0 +1,13 @@
+grupo Manggagawa
+  bilang Magsasaka
+    ang pananim
+      ['sibuyas', 'kamatis', 'sili', 'palay', 'mais'].isaisahin na_ganito |pananim|
+        iprint "Mag tatanim ng #{pananim} ngayong panahon"
+      wakas
+    wakas
+  wakas
+wakas
+
+kung nakatukoy?(Manggagawa::Magsasaka)
+  iprint 'May nakatukoy!'
+wakas

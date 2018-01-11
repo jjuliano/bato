@@ -119,6 +119,7 @@ module RubyParserStuff
       ['na_nasa',              %i[kIN kIN], :expr_beg],
       ['na_ganito',            %i[kDO kDO], :expr_beg],
       ['nang_ganito',          %i[kDO kDO], :expr_beg],
+      ['ng_ganito',            %i[kDO kDO], :expr_beg],
       ['ganito',               %i[kDO kDO], :expr_beg],
       ['ganito_gawin',         %i[kDO kDO], :expr_beg],
       ['ganito_ang_gagawin',   %i[kDO kDO], :expr_beg],

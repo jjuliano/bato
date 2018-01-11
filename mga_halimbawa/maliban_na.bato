@@ -1,0 +1,12 @@
+mga_persona = [
+  { pangalan: 'Gener', kasarian: 'lalaki' },
+  { pangalan: 'Karmen', kasarian: 'babae' }
+]
+
+mga_persona.isaisahin ng_ganito |tao|
+  malibang tao[:kasarian] == 'lalaki'
+    iprint "si #{tao[:pangalan]} ay babae!"
+  maliban_dito
+    iprint "si #{tao[:pangalan]} ay lalaki!"
+  wakas
+wakas
