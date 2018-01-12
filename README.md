@@ -1,6 +1,8 @@
 # Bato
 
-Ang 'Bato' ay ang unang programming language sa wikang Filipino.
+Ang 'Bato Programming Language' ay isang scripting language sa wikang Filipino.
+
+Subukan ang [Bato](https://trybato.herokuapp.com/)
 
 ## Pagtatalaga
 
