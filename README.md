@@ -106,7 +106,7 @@ Maari kang gumamit sa alin sa mga sumusunod sa pagtatapos ng program
     dulo
     katapusan
 
-Sampol
+Halimbawa
 
     bilang = 0
     kapag bilang > 1
@@ -136,7 +136,7 @@ Kapag ang ekspresyon ay hindi nasunod maaring gumamit sa alin sa mga sumusunod
     maliban_dito
     maliban_sa_mga_ito
 
-Sampol
+Halimbawa
 
     pangalan_mo = "Maliksi"
     kapag_ang pangalan_mo == "Maliksi"
@@ -157,7 +157,7 @@ Kapag mayroon kang ekspresyon na madaming resulta gawa ng mga iba't ibang kondis
     kalagayan
     kaukulan
 
-Sampol
+Halimbawa
 
     pangalan_mo = "Mabait"
 
@@ -183,7 +183,7 @@ Kung mayroon kang ekspresyon na gusto mong masunod kahit ano pa ang kahihinatnan
     siguraduhin
     panigurado
 
-Sampol
+Halimbawa
 
     simulan
       itaas "May sira!"
@@ -200,7 +200,7 @@ Ang grupo ay ang lalagyanan ng mga kabilang na klase sa iyong program
 
     grupo
 
-Sampol
+Halimbawa
 
     grupo Hayop
       KABUUAN = 5
@@ -233,7 +233,7 @@ Gumamit ng ngunit_kapag kapag mayroon ka pang kondisyon maliban sa nauna ng kond
     ngunit_kapag_ang
     kung_kapag_ang
 
-Sampol
+Halimbawa
 
     pangalan_mo = "Masipag"
     kapag_ang pangalan_mo == "Matipuno"
@@ -252,7 +252,7 @@ Ang ang ay may kalakip na pangalan upang ito ay matawag sa program
     panuntunan
     panuntunang
 
-Sampol
+Halimbawa
 
     ang id(estudyante = {})
       pangalan = estudyante[:pangalan]
@@ -285,7 +285,7 @@ Ang agapan ay ginagamit kung mayroon maaaring mangyaring pagkakamali na gusto mo
     iligtas
     agapan
 
-Sampol
+Halimbawa
 
     simulan
       1 / 0
@@ -299,7 +299,7 @@ Kapag mayroon kang ekspresyon na mayroong inaasahan na resulta, gumamit ng dapat
 
     dapat
 
-Sampol
+Halimbawa
 
     panulat_mo = "lapis"
 
@@ -318,7 +318,7 @@ Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gu
     magbigay_daan
     bigyang_daan
 
-Sampol
+Halimbawa
 
     ang gumawaNgID
       iprint "------------------------------------------"
@@ -353,7 +353,7 @@ Kapag may listahan na nais mong isa isahin, gumamit ng para_sa
     para_sa
     para_ang
 
-Sampol
+Halimbawa
 
     listahan_ng_mga_prutas = ["mansanas", "mangga", "guava", "santol", "ubas"]
     para_sa prutas na_nasa listahan_ng_mga_prutas ganito_gawin
@@ -366,7 +366,7 @@ Ginagamit ang subukang_muli upang umikot muli ang ekspresyon kung may sirang nan
 
     subukang_muli
 
-Sampol
+Halimbawa
 
     bilang_ng_pagkakamali = 0
     simula
@@ -394,7 +394,7 @@ Kapag mayroon kang ibabalik na resulta sa nagtawag ng ang
     magbigay
     magbigay_nang
 
-Sampol
+Halimbawa
 
     ang magdagdag_ng_isa(halaga)
       idadagdag = halaga + 1
@@ -411,7 +411,7 @@ Ginagamit ang kapag kung meron kang kondisyon sa iyong ekspresyon
     kung
     kung_ang
 
-Sampol
+Halimbawa
 
     kapag_ang 1 > 0
       iprint "mas madami!"
@@ -425,7 +425,7 @@ Ang bilang ay ang pagsasabilang ng isang kaukulang klasipikasyon
 
     bilang
 
-Sampol
+Halimbawa
 
     grupo Tinapay
       bilang Donut
@@ -446,7 +446,7 @@ Gumamit ng habang kung may hinihintay pa na resulta, kondisyon o pangyayari
     habang
     habang_ang
 
-Sampol
+Halimbawa
 
     may_buhay = totoo
 
@@ -462,7 +462,7 @@ Gumamit ng alyas kung kailangan mo tawagin sa ibang pangalan ang iyong panuntuna
 
     alyas
 
-Sampol
+Halimbawa
 
     bilang Hayop
       ang aso
@@ -482,7 +482,7 @@ Ang nakatukoy? ay ginagamit kung kailangan malaman kung umiiral ang isang grupo 
     nakatukoy?
     nakasaad?
 
-Sampol
+Halimbawa
 
     grupo Manggagawa
       bilang Magsasaka
@@ -505,7 +505,7 @@ Ginagamit ang tanggalin kung may tatanggaling panuntunan sa isang klase
     tanggalin
     magtanggal
 
-Sampol
+Halimbawa
 
     grupo Hayop
       bilang Aso
@@ -537,7 +537,7 @@ Gumamit ng 'hinto' kung may nais kang matapos na kondisyon gamit ang 'habang'
     ihinto
     hinto
 
-Sampol
+Halimbawa
 
     nakamit = mali
 
@@ -557,7 +557,7 @@ Ginagamit ang 'sa' kung nais mong matukoy ang kasulukuyang listahan
     nasa
     na_nasa
 
-Sampol
+Halimbawa
 
   Tignan ang [para_sa](#para_sa)
 
@@ -569,7 +569,7 @@ Ginagamit ang 'ganito' kung nais mong i konteksto ang kasulukuyang listahan
     nang_ganito
     ganito
 
-Sampol
+Halimbawa
 
   Tignan ang [magbigay_daan](#magbigay_daan), [nakatukoy?](#nakatukoy?)
 
@@ -581,7 +581,7 @@ Ang 'hanggang' ay magpapatuloy tumakbo hanggang maabot ang tamang kundisyon.
     hanggang_ang
     mapa_hanggang
 
-Sampol
+Halimbawa
 
 		numero = 0
 		panghuling_numero = 5
@@ -596,7 +596,7 @@ Sampol
     maliban_na
     maliban_ang
 
-Sampol
+Halimbawa
 
     mga_persona = [
       { pangalan: 'Gener', kasarian: 'lalaki' },
@@ -618,7 +618,7 @@ Ang 'o' ay ginagamit upang piliin ang nagsasauli ng tama.
     o
     o_ang
 
-Sampol
+Halimbawa
 
     totoo o mali
     => totoo
