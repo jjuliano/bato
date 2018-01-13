@@ -108,11 +108,11 @@ Maari kang gumamit sa alin sa mga sumusunod sa pagtatapos ng program
 
 Halimbawa
 
-    bilang = 0
-    kapag bilang > 1
-      iprint "Mayroon ng laman ang bilang na #{bilang}"
+    bilang_ng_saging = 2
+    kapag bilang_ng_saging > 1
+      iprint "Mayroon akong #{bilang_ng_saging} saging! 🍌"
     kung_hindi
-      iprint "Wala pang laman ang bilang"
+      iprint "Wala na akong saging! 😐"
     wakas
 
 ###  kung_iba
