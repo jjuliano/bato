@@ -5,8 +5,8 @@ mga_persona = [
 
 mga_persona.isaisahin ng_ganito |tao|
   malibang tao[:kasarian] == 'lalaki'
-    iprint "si #{tao[:pangalan]} ay babae!"
+    mag_print "si #{tao[:pangalan]} ay babae!"
   maliban_dito
-    iprint "si #{tao[:pangalan]} ay lalaki!"
+    mag_print "si #{tao[:pangalan]} ay lalaki!"
   wakas
 wakas

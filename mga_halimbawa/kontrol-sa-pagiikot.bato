@@ -1,17 +1,17 @@
 # isaisahin loop
 ['a','b','c','d'].isaisahin na_ganito |titik|
-  iprint "Ang titik ay #{titik}"
+  mag_print "Ang titik ay #{titik}"
 wakas
 
 # isaisahin loop on range
 (1..10).isaisahin na_ganito |numero|
-  iprint "Ang numero ay #{numero}"
+  mag_print "Ang numero ay #{numero}"
 wakas
 
 # while loop
 numero = 1
 habang numero < 10 ganito
-  iprint "Ang numero ay #{numero} na"
+  mag_print "Ang numero ay #{numero} na"
   numero += 1
 wakas
 
@@ -19,7 +19,7 @@ wakas
 numero = 0
 panghuling_numero = 5
 simula
-  iprint "Ang numero ay #{numero} na"
+  mag_print "Ang numero ay #{numero} na"
   numero += 1
 wakas habang numero < panghuling_numero
 
@@ -27,7 +27,7 @@ wakas habang numero < panghuling_numero
 numero = 0
 panghuling_numero = 5
 hanggang numero > panghuling_numero ganito
-  iprint "Ang numero ay #{numero} na"
+  mag_print "Ang numero ay #{numero} na"
   numero += 1
 wakas
 
@@ -35,11 +35,11 @@ wakas
 numero = 0
 panghuling_numero = 5
 simula
-  iprint "Ang numero ay #{numero} na"
+  mag_print "Ang numero ay #{numero} na"
   numero += 1
 wakas hanggang numero < panghuling_numero
 
 # for loop
 para_ang numero na_nasa 0..5
-   iprint "Ang numero ay #{numero} na"
+   mag_print "Ang numero ay #{numero} na"
 wakas

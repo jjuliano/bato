@@ -1,5 +1,5 @@
 kapag 1 > 0
-  iprint "Kumusta mundo!"
+  mag_print "Kumusta mundo!"
 kung_hindi
-  iprint "Mayroong sira"
+  mag_print "Mayroong sira"
 wakas

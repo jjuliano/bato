@@ -1,7 +1,7 @@
 may_buhay = totoo
 
 habang may_buhay
-  iprint 'may pag-asa!'
+  mag_print 'may pag-asa!'
 
   hinto
 wakas

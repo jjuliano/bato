@@ -51,9 +51,9 @@ ang pibonasyingPaguulitNaUmiikot(n, n1 = 1, n2 = 1)
   magbalik n1
 wakas
 
-iprint "Gamit ang Panuntunang Pibonasyi sa 10 ay #{pibonasyi 10}"
-iprint "Gamit ang Panuntunang Pibonasying May Pagsuksok sa 9 ay #{pibonasyingPagsuksok 9}"
-iprint "Gamit ang Panuntunang Pibonasying Inuulit sa 8 ay #{pibonasyingInuulit 8}"
-iprint "Gamit ang Panuntunang Pibonasying May Buntot na Inuulit sa 7 ay #{pibonasyingBuntutangInuulit 7}"
-iprint "Gamit ang Panuntunang Pibonasying Paguulit sa 6 ay #{pibonasyingPaguulit 6}"
-iprint "Gamit ang Panuntunang Pibonasying Paguulit na Umiikot sa 5 ay #{pibonasyingPaguulitNaUmiikot 5}"
+mag_print "Gamit ang Panuntunang Pibonasyi sa 10 ay #{pibonasyi 10}"
+mag_print "Gamit ang Panuntunang Pibonasying May Pagsuksok sa 9 ay #{pibonasyingPagsuksok 9}"
+mag_print "Gamit ang Panuntunang Pibonasying Inuulit sa 8 ay #{pibonasyingInuulit 8}"
+mag_print "Gamit ang Panuntunang Pibonasying May Buntot na Inuulit sa 7 ay #{pibonasyingBuntutangInuulit 7}"
+mag_print "Gamit ang Panuntunang Pibonasying Paguulit sa 6 ay #{pibonasyingPaguulit 6}"
+mag_print "Gamit ang Panuntunang Pibonasying Paguulit na Umiikot sa 5 ay #{pibonasyingPaguulitNaUmiikot 5}"

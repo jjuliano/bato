@@ -2,15 +2,15 @@ grupo MgaAlagangHayop
   KAILANGAN_DAMI_NG_ASO = 5
   bilang Aso
     ang tahol
-      iprint "Woof..."
+      mag_print "Woof..."
     wakas
 
     ang kumanin
-      iprint "..."
+      mag_print "..."
     wakas
 
     ang ikembot_ang_buntot
-      iprint "Ginagawa ko ito dahil masaya ako!"
+      mag_print "Ginagawa ko ito dahil masaya ako!"
     wakas
   wakas  
 wakas

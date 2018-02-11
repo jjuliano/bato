@@ -21,9 +21,9 @@ Ang kadahilanang ginamit ang pangalang 'bato' ay dahil ang Ruby ay isang uri ng 
 Gumawa ng isang file na kamusta_mundo.bato na may mga sumusunod na nilalaman
 
     kapag 1 > 0
-      iprint "Kumusta mundo!"
+      mag_print "Kumusta mundo!"
     kung_hindi
-      iprint "Mayroong sira"
+      mag_print "Mayroong sira"
     wakas
 
 at pa-andarin ang program sa pamamagitan ng
@@ -80,16 +80,16 @@ Paggamit ng kondisyon.
       subukang_muli kapag bilang_ng_pagkakamali < 3
       iangat "malubhang pagkakamali"
     siguraduhing
-      iprint "Tapos na"
+      mag_print "Tapos na"
     wakas
 
 ### Panuntunan
 
     ang iprintAngPangalan(pangalan = wala)
       kapag pangalan != wala
-        iprint "Magandang araw sa iyo #{pangalan}!"
+        mag_print "Magandang araw sa iyo #{pangalan}!"
       kung_hindi
-        iprint "Magandang araw!"
+        mag_print "Magandang araw!"
       wakas
     wakas
 
@@ -110,9 +110,9 @@ Halimbawa
 
     bilang_ng_saging = 2
     kapag bilang_ng_saging > 1
-      iprint "Mayroon akong #{bilang_ng_saging} saging! 🍌"
+      mag_print "Mayroon akong #{bilang_ng_saging} saging! 🍌"
     kung_hindi
-      iprint "Wala na akong saging! 😐"
+      mag_print "Wala na akong saging! 😐"
     wakas
 
 ###  kung_iba
@@ -140,9 +140,9 @@ Halimbawa
 
     pangalan_mo = "Maliksi"
     kapag_ang pangalan_mo == "Maliksi"
-      iprint "Ikaw ay si #{pangalan_mo}!"
+      mag_print "Ikaw ay si #{pangalan_mo}!"
     kung_hindi_naman
-      iprint "Magandang araw sa iyo #{pangalan_mo}!"
+      mag_print "Magandang araw sa iyo #{pangalan_mo}!"
     wakas
 
 ### sakali
@@ -163,13 +163,13 @@ Halimbawa
 
     sakaling pangalan_mo
     ay "Maliksi"
-      iprint "Ikaw ay si Maliksi!"
+      mag_print "Ikaw ay si Maliksi!"
     ay "Matipuno"
-      iprint "Ikaw ay si Matipuno!"
+      mag_print "Ikaw ay si Matipuno!"
     ay "Mabait"
-      iprint "Ikaw ay si Mabait!"
+      mag_print "Ikaw ay si Mabait!"
     maliban_dito
-      iprint "Magandang araw sa iyo!"
+      mag_print "Magandang araw sa iyo!"
     wakas
 
 ### tiyakin
@@ -188,10 +188,10 @@ Halimbawa
     simulan
       itaas "May sira!"
     agapan
-      iprint "Ipagpatuloy..."
+      mag_print "Ipagpatuloy..."
       itaas "May nasira na na-agapan"
     tiyaking
-      iprint "Tapos na"
+      mag_print "Tapos na"
     wakas
 
 ### grupo
@@ -207,15 +207,15 @@ Halimbawa
 
       bilang Aso
         ang tahol
-          iprint "Woof..."
+          mag_print "Woof..."
         wakas
 
         ang kumanin
-          iprint "..."
+          mag_print "..."
         wakas
 
         ang ikembot_ang_buntot
-          iprint "Ginagawa ko ito dahil masaya ako!"
+          mag_print "Ginagawa ko ito dahil masaya ako!"
         wakas
       wakas
     wakas
@@ -237,11 +237,11 @@ Halimbawa
 
     pangalan_mo = "Masipag"
     kapag_ang pangalan_mo == "Matipuno"
-      iprint "Ikaw ay si Matipuno!"
+      mag_print "Ikaw ay si Matipuno!"
     ngunit_kapag_ang pangalan_mo == "Masipag"
-      iprint "Ikaw ay si Masipag!"
+      mag_print "Ikaw ay si Masipag!"
     maliban_sa_mga_ito
-      iprint "Wala kang rekord saamin!"
+      mag_print "Wala kang rekord saamin!"
     wakas
 
 ### ang
@@ -261,7 +261,7 @@ Halimbawa
       baitang  = estudyante[:baitang]
       seksiyon = estudyante[:seksiyon]
 
-      iprint <<-KATAPUSAN
+      mag_print <<-KATAPUSAN
         Pangalan: #{pangalan}
         Edad:     #{edad}
         Tirahan:  #{tirahan}
@@ -290,7 +290,7 @@ Halimbawa
     simulan
       1 / 0
     agapan
-      iprint "Hindi ito posible!"
+      mag_print "Hindi ito posible!"
     wakas
 
 ### dapat
@@ -309,7 +309,7 @@ Halimbawa
       maliban_sa_mga_ito "intermediate paper"
     wakas
 
-    iprint "Ang papel na gagamitin mo ay #{papel}"
+    mag_print "Ang papel na gagamitin mo ay #{papel}"
 
 ### magbigay_daan
 
@@ -321,14 +321,14 @@ Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gu
 Halimbawa
 
     ang gumawaNgID
-      iprint "------------------------------------------"
+      mag_print "------------------------------------------"
       magbigay_daan
-      iprint "------------------------------------------"
+      mag_print "------------------------------------------"
     wakas
 
     ang ID(impormasyon = {})
       gumawaNgID na_ganito
-        iprint <<-KATAPUSAN
+        mag_print <<-KATAPUSAN
           Pangalan: #{impormasyon[:pangalan]}
           Edad:     #{impormasyon[:edad]}
           Tirahan:  #{impormasyon[:tirahan]}
@@ -357,7 +357,7 @@ Halimbawa
 
     listahan_ng_mga_prutas = ["mansanas", "mangga", "guava", "santol", "ubas"]
     para_sa prutas na_nasa listahan_ng_mga_prutas ganito_gawin
-      iprint prutas.sa_malaking_titik
+      mag_print prutas.sa_malaking_titik
     wakas
 
 ### subukang_muli
@@ -376,7 +376,7 @@ Halimbawa
       subukang_muli kapag bilang_ng_pagkakamali < 3
       iangat "malubhang pagkakamali"
     siguraduhing
-      iprint "Tapos na"
+      mag_print "Tapos na"
     wakas
 
 ### ibalik
@@ -414,9 +414,9 @@ Ginagamit ang kapag kung meron kang kondisyon sa iyong ekspresyon
 Halimbawa
 
     kapag_ang 1 > 0
-      iprint "mas madami!"
+      mag_print "mas madami!"
     kung_iba
-      iprint "may sira"
+      mag_print "may sira"
     wakas
 
 ### bilang
@@ -430,7 +430,7 @@ Halimbawa
     grupo Tinapay
       bilang Donut
         ang flavor
-          iprint 'Strawberry!'
+          mag_print 'Strawberry!'
         wakas
       wakas
     wakas
@@ -451,7 +451,7 @@ Halimbawa
     may_buhay = totoo
 
     habang may_buhay
-      iprint 'may pag-asa!'
+      mag_print 'may pag-asa!'
       hinto
     wakas
     => 'may pag-asa!'
@@ -466,7 +466,7 @@ Halimbawa
 
     bilang Hayop
       ang aso
-        iprint 'si browny ay mabait!'
+        mag_print 'si browny ay mabait!'
       wakas
       alyas browny aso
     wakas
@@ -488,14 +488,14 @@ Halimbawa
       bilang Magsasaka
         ang pananim
           ['sibuyas', 'kamatis', 'sili', 'palay', 'mais'].isaisahin na_ganito |pananim|
-            iprint "Mag tatanim ng #{pananim} ngayong panahon"
+            mag_print "Mag tatanim ng #{pananim} ngayong panahon"
           wakas
         wakas
       wakas
     wakas
 
     kung nakatukoy?(Manggagawa::Magsasaka)
-      iprint 'May nakatukoy!'
+      mag_print 'May nakatukoy!'
     wakas
 
 ### tanggalin
@@ -510,7 +510,7 @@ Halimbawa
     grupo Hayop
       bilang Aso
         ang tahol
-          iprint 'baw waw!'
+          mag_print 'baw waw!'
         wakas
       wakas
     wakas
@@ -518,7 +518,7 @@ Halimbawa
     bilang Pusa < Hayop::Aso
       tanggalin tahol
       ang meow
-        iprint 'meow wahu!'
+        mag_print 'meow wahu!'
       wakas
     wakas
 
@@ -527,7 +527,7 @@ Halimbawa
     simulan
       pusa.tahol
     agapan => pagkakamali
-      iprint "ang pagkakamali ay '#{pagkakamali}'"
+      mag_print "ang pagkakamali ay '#{pagkakamali}'"
     wakas
 
 ### ihinto
@@ -542,11 +542,11 @@ Halimbawa
     nakamit = mali
 
     habang nakamit == mali
-      iprint 'hindi pa nakakamit!'
+      mag_print 'hindi pa nakakamit!'
       hinto
     wakas
 
-    iprint 'nakamit na!'
+    mag_print 'nakamit na!'
 
 ### sa
 
@@ -586,7 +586,7 @@ Halimbawa
 		numero = 0
 		panghuling_numero = 5
 		simula
-		  iprint "Ang numero ay #{numero} na"
+		  mag_print "Ang numero ay #{numero} na"
 		  numero += 1
 		wakas hanggang numero < panghuling_numero
 
@@ -605,9 +605,9 @@ Halimbawa
 
     mga_persona.isaisahin ng_ganito |tao|
       malibang tao[:kasarian] == 'lalaki'
-        iprint "si #{tao[:pangalan]} ay babae!"
+        mag_print "si #{tao[:pangalan]} ay babae!"
       maliban_dito
-        iprint "si #{tao[:pangalan]} ay lalaki!"
+        mag_print "si #{tao[:pangalan]} ay lalaki!"
       wakas
     wakas
 

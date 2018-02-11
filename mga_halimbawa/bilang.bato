@@ -1,7 +1,7 @@
 grupo Tinapay
   bilang Donut
     ang flavor
-      iprint 'Strawberry!'
+      mag_print 'Strawberry!'
     wakas
   wakas
 wakas

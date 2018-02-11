@@ -1,14 +1,14 @@
 ang gumawaNgID
-  iprint "------------------------------------------"
+  mag_print "------------------------------------------"
   
   magbigay_daan
   
-  iprint "------------------------------------------"
+  mag_print "------------------------------------------"
 wakas
 
 ang ID(impormasyon = {})
   gumawaNgID na_ganito
-    iprint <<-KATAPUSAN
+    mag_print <<-KATAPUSAN
   Pangalan: #{impormasyon[:pangalan]}
   Edad:     #{impormasyon[:edad]}
   Tirahan:  #{impormasyon[:tirahan]}

@@ -5,7 +5,7 @@ ang gumawaNgID(estudyante = {})
   baitang = estudyante[:baitang]
   seksiyon = estudyante[:seksiyon]
   
-  iprint <<-KATAPUSAN
+  mag_print <<-KATAPUSAN
   	Pangalan: #{pangalan}
 	Edad:     #{edad}
 	Tirahan:  #{tirahan}

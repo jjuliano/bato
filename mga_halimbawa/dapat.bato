@@ -6,4 +6,4 @@ papel = sakaling panulat_mo
   maliban_sa_mga_ito "intermediate paper"
 wakas
 
-iprint "Ang papel na gagamitin mo ay #{papel}"
+mag_print "Ang papel na gagamitin mo ay #{papel}"

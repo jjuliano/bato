@@ -1,7 +1,7 @@
 grupo Hayop
   bilang Aso
     ang tahol
-      iprint 'baw waw!'
+      mag_print 'baw waw!'
     wakas
   wakas
 wakas
@@ -10,7 +10,7 @@ bilang Pusa < Hayop::Aso
   tanggalin tahol
 
   ang meow
-    iprint 'meow wahu!'
+    mag_print 'meow wahu!'
   wakas
 wakas
 
@@ -19,5 +19,5 @@ pusa = Pusa.kumatawan
 simulan
   pusa.tahol
 agapan => pagkakamali
-  iprint "ang pagkakamali ay '#{pagkakamali}'"
+  mag_print "ang pagkakamali ay '#{pagkakamali}'"
 wakas

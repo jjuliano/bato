@@ -1,8 +1,8 @@
 nakamit = mali
 
 habang nakamit == mali
-  iprint 'hindi pa nakakamit!'
+  mag_print 'hindi pa nakakamit!'
   hinto
 wakas
 
-iprint 'nakamit na!'
+mag_print 'nakamit na!'

@@ -1,8 +1,8 @@
 ang iprintAngPangalan(pangalan = wala)
   kapag pangalan != wala
-    iprint "Magandang araw sa iyo #{pangalan}!"
+    mag_print "Magandang araw sa iyo #{pangalan}!"
   kung_hindi
-    iprint "Magandang araw!"
+    mag_print "Magandang araw!"
   wakas
 wakas
 

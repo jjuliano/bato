@@ -1,8 +1,8 @@
 pangalan_mo = "Masipag"
 kapag_ang pangalan_mo == "Matipuno"
-  iprint "Ikaw ay si Matipuno!"
+  mag_print "Ikaw ay si Matipuno!"
 ngunit_kapag_ang pangalan_mo == "Masipag"
-  iprint "Ikaw ay si Masipag!"
+  mag_print "Ikaw ay si Masipag!"
 maliban_sa_mga_ito
-  iprint "Wala kang rekord dito!"
+  mag_print "Wala kang rekord dito!"
 wakas

@@ -4,15 +4,15 @@ grupo TimeBomb
   BILANG = 5
   bilang Bomba
     ang tik
-      iprint 'tik'
+      mag_print 'tik'
     wakas
 
     ang tok
-      iprint 'tok'
+      mag_print 'tok'
     wakas
 
     ang sabog
-      iprint 'kaboom!'
+      mag_print 'kaboom!'
     wakas
   wakas
 wakas
@@ -21,7 +21,7 @@ pasabog = TimeBomb::Bomba.gumawa
 
 numero = 1
 habang numero <= TimeBomb::BILANG ganito
-	iprint "#{numero}"
+	mag_print "#{numero}"
 
   kapag (numero == TimeBomb::BILANG)
     pasabog.sabog
@@ -31,7 +31,7 @@ habang numero <= TimeBomb::BILANG ganito
     pasabog.tok
   wakas
 
-  sleep 1
+  matulog 1
 	numero += 1
 wakas
 

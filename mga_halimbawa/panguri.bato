@@ -6,7 +6,7 @@ bilang Pangalan
   wakas
 
   ang ipakitaAngPangalan
-    iprint sariling.pangalan
+    mag_print sariling.pangalan
   wakas
 wakas
 
