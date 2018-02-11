@@ -1,4 +1,5 @@
 class Array
+  alias baliktad reverse
   alias umikot cycle
   alias isuksok inject
   alias magbagsak drop
@@ -13,4 +14,6 @@ class Array
   alias bawat each
   alias kada_isa each
   alias sa_bawat_isa each
+  alias bilang_bawat_isa each_with_index
+  alias haba length
 end
