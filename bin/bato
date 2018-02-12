@@ -13,7 +13,7 @@ else
   puts <<-EOS
 Hindi tinukoy ang file. Ang tamang sintaks ay:
 
-bato file.bato
+bato file.bt
   EOS
 
 end

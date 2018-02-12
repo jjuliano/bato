@@ -18,7 +18,7 @@ Ang kadahilanang ginamit ang pangalang 'bato' ay dahil ang Ruby ay isang uri ng 
 
 ## Ang unang program
 
-Gumawa ng isang file na kamusta_mundo.bato na may mga sumusunod na nilalaman
+Gumawa ng isang file na `kamusta_mundo.bt` na may mga sumusunod na nilalaman
 
     kapag 1 > 0
       mag_print "Kumusta mundo!"
@@ -28,7 +28,7 @@ Gumawa ng isang file na kamusta_mundo.bato na may mga sumusunod na nilalaman
 
 at pa-andarin ang program sa pamamagitan ng
 
-    bato kamusta_mundo.bato
+    bato kamusta_mundo.bt
 
 ## Sintaks
 
