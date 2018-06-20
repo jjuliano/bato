@@ -1,4 +1,3 @@
-
 require 'spec_helper'
 
 isalaysay_ang 'Tagatala' do

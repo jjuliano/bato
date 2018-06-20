@@ -2,18 +2,20 @@
 require 'bato/tagatala'
 require 'rubygems'
 
-if pangalan_ng_file = ARGV[0]
-  tagatala = Bato::Tagatala.new
-  kodigo = File.read pangalan_ng_file, encoding: 'utf-8'
-  ruby_kodigo = tagatala.sa_ruby kodigo
-  raise 'Ang pinakamababang kinakailangan bersiyon ng Ruby ay 2.4' if
-    Gem::Version.new(RUBY_VERSION) < Gem::Version.new('2.4')
-  eval ruby_kodigo
-else
+if ARGV[0].nil?
   puts <<-EOS
 Hindi tinukoy ang file. Ang tamang sintaks ay:
 
 bato file.bt
   EOS
-
+else
+  ARGV.each do |file|
+    next unless file
+    tagatala = Bato::Tagatala.new
+    kodigo = File.read file, encoding: 'utf-8'
+    ruby_kodigo = tagatala.sa_ruby kodigo
+    raise 'Ang pinakamababang kinakailangan bersiyon ng Ruby ay 2.4' if
+      Gem::Version.new(RUBY_VERSION) < Gem::Version.new('2.3')
+    eval ruby_kodigo
+  end
 end
