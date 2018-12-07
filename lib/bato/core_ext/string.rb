@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class String
   alias baliktad reverse
   alias haba length

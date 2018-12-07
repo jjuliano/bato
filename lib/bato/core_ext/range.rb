@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Range
   alias isaisahin each
   alias bawat each

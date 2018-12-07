@@ -107,7 +107,7 @@ grupo Batotris
     PADER_LETRA = "🀫 "
     BLOCK_LETRA = "⚀ "
     WALA_LETRA = "  "
-    panguri :dako
+    katangian :dako
 
     ang initialize
       @sakop = gagalawan

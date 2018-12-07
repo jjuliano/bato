@@ -2,7 +2,7 @@
 
 Ang 'Bato Programming Language' ay isang scripting language sa wikang Filipino.
 
-Subukan ang [Bato](https://trybato.herokuapp.com/)
+Subukan ang [Bato](https://trybato.herokuapp.com/) gamit ang *interactive online console* .
 
 ## Pagtatalaga
 
@@ -623,9 +623,39 @@ Halimbawa
     totoo o mali
     => totoo
 
+### katangian
+
+Ang 'katangian' ay ginagamit upang makapag takda at makapag basa ng *value* sa katangian na ipinahayag sa loob ng grupo. 
+
+    katangian
+    panguri
+
+Halimbawa
+
+    bilang Robot
+      katangian :pangalan, :kakayahan
+    
+      ang magpakilala
+        mag_print <<-INTRO
+            Ako ay isang Robot!
+            Ang pangalan ko ay "#{sariling.pangalan}"
+            Ako ay may kakayahang mag "#{sariling.kakayahan}"
+        INTRO
+      wakas
+    wakas
+    
+    robot = Robot.gumawa
+    robot.pangalan = "bot-chukoy"
+    robot.kakayahan = "tambling"
+    robot.magpakilala
+
 ## Pagtulong sa pagdedevelop ng Bato
 
 Magpadala ng mga kahilingan sa paggawa ng ticket.
+
+## Media
+
+* Na *feature* ang Bato programming language sa isang international news website na  [The Register](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato). Mababasa ang artikel sa [https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato).
 
 ## Lisensya
 

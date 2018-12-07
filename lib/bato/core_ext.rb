@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bato/core_ext/kernel'
 require 'bato/core_ext/string'
 require 'bato/core_ext/array'

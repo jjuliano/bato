@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Array
   alias baliktad reverse
   alias umikot cycle

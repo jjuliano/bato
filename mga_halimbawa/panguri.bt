@@ -1,13 +1,16 @@
-bilang Pangalan
-  panguri :pangalan
+bilang Robot
+  katangian :pangalan, :kakayahan
 
-  ang initialize(pangalan)
-    @pangalan = pangalan
-  wakas
-
-  ang ipakitaAngPangalan
-    mag_print sariling.pangalan
+  ang magpakilala
+    mag_print <<-INTRO
+    Ako ay isang Robot!
+    Ang pangalan ko ay "#{sariling.pangalan}"
+    Ako ay may kakayahang mag "#{sariling.kakayahan}"
+    INTRO
   wakas
 wakas
 
-Pangalan.gumawa('Joel').ipakitaAngPangalan
+robot = Robot.gumawa
+robot.pangalan = "bot-chukoy"
+robot.kakayahan = "tambling"
+robot.magpakilala
