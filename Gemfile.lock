@@ -1,0 +1,42 @@
+PATH
+  remote: .
+  specs:
+    bato (0.0.13)
+      ruby2ruby (~> 2.4.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.4.4)
+    rake (13.0.6)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
+    ruby2ruby (2.4.4)
+      ruby_parser (~> 3.1)
+      sexp_processor (~> 4.6)
+    ruby_parser (3.17.0)
+      sexp_processor (~> 4.15, >= 4.15.1)
+    sexp_processor (4.15.3)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  bato!
+  bundler (~> 2.2.19)
+  rake (~> 13.0.6)
+  rspec (~> 3.10.0)
+
+BUNDLED WITH
+   2.2.19
