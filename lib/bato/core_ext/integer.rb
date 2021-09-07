@@ -3,4 +3,5 @@
 class Integer
   alias ulit times
   alias beses times
+  alias kasunod next
 end

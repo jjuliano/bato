@@ -12,4 +12,5 @@ class String
   alias kagatan chomp
   alias palitan replace
   alias siyasatin inspect
+  alias kasunod next
 end
