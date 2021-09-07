@@ -200,7 +200,7 @@ grupo Batotris
 
   ang mahulog_to_bloke(piyesa, sakop)
     resulta = piyesa
-    loop na_ganito
+    paulit_ulit na_ganito
       susunod_na_posisyon = resulta.mahulog.magiba_ng_posisyon
       kapag sakop.ay_bloke?(susunod_na_posisyon)
         isauli_ang resulta
@@ -227,7 +227,7 @@ grupo Batotris
       wakas
     wakas
 
-    loop na_ganito
+    paulit_ulit na_ganito
       matulog(0.2)
       sarili.burahin_ang_screen
       mag_print "kaliwa: [left key], kanan: [right key], mahulog: [space], ikutin: [up key], q: exit \e[25D"

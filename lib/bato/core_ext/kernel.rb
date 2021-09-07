@@ -12,4 +12,6 @@ module Kernel
   alias iangat raise
   alias itaas raise
   alias matulog sleep
+  alias ulit_ulitin loop
+  alias paulit_ulit loop
 end

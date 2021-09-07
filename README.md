@@ -1,20 +1,25 @@
 # Bato
 
-Ang 'Bato Programming Language' ay isang scripting language sa wikang Filipino.
+Ang **Bato Programming Language** ay isang scripting language sa wikang
+*Filipino*.
 
-Subukan ang [Bato](https://trybato.herokuapp.com/) gamit ang *interactive online console* .
+Ang layunin ng proyektong ito ay upang mag turo ng *Computer Programming* sa
+wikang *Filipino*, sa madaling maintindihang wika upang matutuhan ito.
+
+Subukan ang [Bato *interactive online console*](https://trybato.herokuapp.com/).
 
 ## Pagtatalaga
 
-Kailangan mo munang i-install ang Ruby programming language (version 1.9.3 o mas bago)
-at pagkatapos maitalaga ang Ruby, i-run naman ito
+Kailangan mo munang i-install ang Ruby programming language (version 3.0.1 o mas
+bago) at pagkatapos maitalaga ang Ruby, i-run naman ito
 
     gem install bato
 
 ## Bakit Bato?
 
-Ang 'bato' ay hango sa [Ruby Programming Language](http://www.ruby-lang.org/) na may Filipino sintaks.
-Ang kadahilanang ginamit ang pangalang 'bato' ay dahil ang Ruby ay isang uri ng bato.
+Ang **bato** ay hango sa [Ruby Programming Language](http://www.ruby-lang.org/)
+na may *Filipino* sintaks. Ang kadahilanang ginamit ang pangalang 'bato' ay
+dahil ang Ruby ay isang uri ng bato.
 
 ## Ang unang program
 
@@ -147,7 +152,8 @@ Halimbawa
 
 ### sakali
 
-Kapag mayroon kang ekspresyon na madaming resulta gawa ng mga iba't ibang kondisyon, maari kang gumamit ng mga sumusunod
+Kapag mayroon kang ekspresyon na madaming resulta gawa ng mga iba't ibang
+kondisyon, maari kang gumamit ng mga sumusunod
 
     sakaling
     sakali
@@ -174,7 +180,8 @@ Halimbawa
 
 ### tiyakin
 
-Kung mayroon kang ekspresyon na gusto mong masunod kahit ano pa ang kahihinatnan nito, gumamit ng mga sumusunod
+Kung mayroon kang ekspresyon na gusto mong masunod kahit ano pa ang kahihinatnan
+nito, gumamit ng mga sumusunod
 
     tiyaking
     matiyak
@@ -226,7 +233,8 @@ Halimbawa
 
 ### ngunit_kapag
 
-Gumamit ng ngunit_kapag kapag mayroon ka pang kondisyon maliban sa nauna ng kondisyon
+Gumamit ng ngunit_kapag kapag mayroon ka pang kondisyon maliban sa nauna ng
+kondisyon
 
     ngunit_kapag
     kung_kapag
@@ -280,7 +288,8 @@ Halimbawa
 
 ### agapan
 
-Ang agapan ay ginagamit kung mayroon maaaring mangyaring pagkakamali na gusto mong maisalba o mailigtas
+Ang agapan ay ginagamit kung mayroon maaaring mangyaring pagkakamali na gusto
+mong maisalba o mailigtas
 
     iligtas
     agapan
@@ -313,7 +322,8 @@ Halimbawa
 
 ### magbigay_daan
 
-Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang gumagana pa ang program, gumamit ng magbigay_daan
+Kapag ang ekspresyon ay mayroong inaasahang dapat na ibigay na resulta habang
+gumagana pa ang program, gumamit ng magbigay_daan
 
     magbigay_daan
     bigyang_daan
@@ -362,7 +372,8 @@ Halimbawa
 
 ### subukang_muli
 
-Ginagamit ang subukang_muli upang umikot muli ang ekspresyon kung may sirang nangyari at nais mo ulit subukan pa andarin
+Ginagamit ang subukang_muli upang umikot muli ang ekspresyon kung may sirang
+nangyari at nais mo ulit subukan pa andarin
 
     subukang_muli
 
@@ -458,7 +469,8 @@ Halimbawa
 
 ### alyas
 
-Gumamit ng alyas kung kailangan mo tawagin sa ibang pangalan ang iyong panuntunan
+Gumamit ng alyas kung kailangan mo tawagin sa ibang pangalan ang iyong
+panuntunan
 
     alyas
 
@@ -477,7 +489,8 @@ Halimbawa
 
 ### nakatukoy?
 
-Ang nakatukoy? ay ginagamit kung kailangan malaman kung umiiral ang isang grupo o klase.
+Ang nakatukoy? ay ginagamit kung kailangan malaman kung umiiral ang isang grupo
+o klase
 
     nakatukoy?
     nakasaad?
@@ -487,7 +500,7 @@ Halimbawa
     grupo Manggagawa
       bilang Magsasaka
         ang pananim
-          ['sibuyas', 'kamatis', 'sili', 'palay', 'mais'].isaisahin na_ganito |pananim|
+          ['sibuyas', 'kamatis', 'palay', 'mais'].isaisahin na_ganito |pananim|
             mag_print "Mag tatanim ng #{pananim} ngayong panahon"
           wakas
         wakas
@@ -583,12 +596,12 @@ Ang 'hanggang' ay magpapatuloy tumakbo hanggang maabot ang tamang kundisyon.
 
 Halimbawa
 
-		numero = 0
-		panghuling_numero = 5
-		simula
-		  mag_print "Ang numero ay #{numero} na"
-		  numero += 1
-		wakas hanggang numero < panghuling_numero
+    pambilang = 0
+    panghuling_numero = 5
+    simula
+      mag_print "Ang numero ay #{pambilang} na"
+      pambilang += 1
+    wakas hanggang pambilang < panghuling_numero
 
 ### maliban_na
 
@@ -625,7 +638,8 @@ Halimbawa
 
 ### katangian
 
-Ang 'katangian' ay ginagamit upang makapag takda at makapag basa ng *value* sa katangian na ipinahayag sa loob ng grupo. 
+Ang 'katangian' ay ginagamit upang makapag takda at makapag basa ng *value* sa
+katangian na ipinahayag sa loob ng grupo.
 
     katangian
     panguri
@@ -634,7 +648,7 @@ Halimbawa
 
     bilang Robot
       katangian :pangalan, :kakayahan
-    
+
       ang magpakilala
         mag_print <<-INTRO
             Ako ay isang Robot!
@@ -643,11 +657,29 @@ Halimbawa
         INTRO
       wakas
     wakas
-    
+
     robot = Robot.gumawa
     robot.pangalan = "bot-chukoy"
     robot.kakayahan = "tambling"
     robot.magpakilala
+
+### ulit-ulitin
+
+Ang 'ulit-ulitin' ay ginagamit upang paikot-ikutin ang ekspresyon hanggang
+ihinto ito kapag natupad ang isang kondisyon.
+
+    paulit_ulit
+    ulit_ulitin
+
+Halimbawa
+
+    pambilang = 0
+
+    paulit_ulit na_ganito
+      ihinto kapag_ang pambilang == 10
+      mag_print pambilang
+      pambilang += 1
+    wakas
 
 ## Pagtulong sa pagdedevelop ng Bato
 
@@ -655,7 +687,10 @@ Magpadala ng mga kahilingan sa paggawa ng ticket.
 
 ## Media
 
-* Na *feature* ang Bato programming language sa isang international news website na  [The Register](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato). Mababasa ang artikel sa [https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato).
+* Na *feature* ang Bato programming language sa isang international news website
+na [The Register](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato). Mababasa
+ang artikel sa [https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato).
+
 
 ## Lisensya
 
