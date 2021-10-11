@@ -61,11 +61,11 @@ at pa-andarin ang program sa pamamagitan ng
 Paggamit ng kondisyon.
 
     kapag halaga > 100 dapat
-      "ayos lang"
+      mag_print "ayos lang"
     kung_kapag halaga > 0 dapat
-      "ok lang"
+      mag_print "ok lang"
     kung_hindi
-      "wala lang"
+      mag_print "wala lang"
     wakas
 
     kung_sakaling halaga
