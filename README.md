@@ -10,7 +10,7 @@ Subukan ang [Bato *interactive online console*](https://trybato.herokuapp.com/).
 
 ## Media
 
-* Sa Tweet ni Yukihiro Matzumoto o *matz*, ang gumawa ng Ruby - https://twitter.com/yukihiro_matz/status/962193256929832960?s=20&t=uUVBVET4Dog0hFYlgdeAtg
+* Sa Tweet ni Yukihiro Matzumoto o *matz*, ang gumawa ng Ruby - https://twitter.com/yukihiro_matz/status/962193256929832960
 * Na *feature* ang Bato programming language sa isang international news website na [The Register](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato)
 * Sa lokal na *digital magazine*. https://www.speedmagazine.ph/bato-tagalog-programming-language-by-joel-bryan-juliano/
 * UPLB Mass - https://twitter.com/uplbmass1973/status/1429684834511716355?s=20&t=uUVBVET4Dog0hFYlgdeAtg
