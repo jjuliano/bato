@@ -13,15 +13,15 @@ Subukan ang [Bato *interactive online console*](https://trybato.herokuapp.com/).
 * Sa Tweet ni Yukihiro Matzumoto o *matz*, ang gumawa ng Ruby - https://twitter.com/yukihiro_matz/status/962193256929832960
 * Na *feature* ang Bato programming language sa isang international news website na [The Register](https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato)
 * Sa lokal na *digital magazine*. https://www.speedmagazine.ph/bato-tagalog-programming-language-by-joel-bryan-juliano/
-* UPLB Mass - https://twitter.com/uplbmass1973/status/1429684834511716355?s=20&t=uUVBVET4Dog0hFYlgdeAtg
+* UPLB Mass - https://twitter.com/uplbmass1973/status/1429684834511716355
 * Access DLSU - https://www.facebook.com/AccessDLSU/posts/1666465890181933
-* BITS San Beda - https://www.facebook.com/BITSSanBeda/photos/a.476052709434852/1391553414551439/
+* BITS San Beda - https://www.facebook.com/BITSSanBeda/photos/a.476052709434852/1391553414551439
 * BinalatonganCommunityCollegeBITS - https://www.facebook.com/BinalatonganCommunityCollegeBITS/posts/207649374632071
-* FullStack HQ - https://twitter.com/fullstackhq/status/1429035930640388106?s=20&t=uUVBVET4Dog0hFYlgdeAtg
-* YCombinator Hacker News - https://twitter.com/hnbot/status/951816054161977344?s=20&t=uUVBVET4Dog0hFYlgdeAtg
+* FullStack HQ - https://twitter.com/fullstackhq/status/1429035930640388106
+* YCombinator Hacker News - https://twitter.com/hnbot/status/951816054161977344
 * Programmer Ako - https://www.facebook.com/ProgrammerLang/posts/808487952978981
 * Algo Filipino - https://www.facebook.com/AlgoFilipino/posts/149472316929258
-* Form Function Class - https://twitter.com/ffcph/status/1015212784089534464?s=20&t=uUVBVET4Dog0hFYlgdeAtg
+* Form Function Class - https://twitter.com/ffcph/status/1015212784089534464
 
 ## Pagtatalaga
 
