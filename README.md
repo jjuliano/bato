@@ -88,21 +88,19 @@ hindi tama
 
 Paggamit ng kondisyon.
 
-```ruby
-halaga = 101
 
-mensahe = 
-  kapag halaga > 100 dapat
-    "ayos lang"
-  kung_kapag halaga > 0 dapat
-    "ok lang"
-  kung_hindi
-    "wala lang"
-  wakas
+```ruby
+halaga = 100
+
+mensahe = kapag halaga > 100 dapat
+ "ayos lang"
+kung_kapag halaga > 0 dapat
+ "ok lang"
+kung_hindi
+ "wala lang"
+wakas
 
 mag_print mensahe
-
-halaga = 5
 
 mensahe = 
   kung_sakaling halaga
