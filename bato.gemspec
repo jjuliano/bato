@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'ruby2ruby', '~> 2.4.4'
 
   spec.add_development_dependency 'bundler', '~> 2.2.19'
-  spec.add_development_dependency 'rake', '~> 13.0.6'
+  spec.add_development_dependency 'rake', '~> 13.2.1'
   spec.add_development_dependency 'rspec', '~> 3.10.0'
 end
