@@ -12,7 +12,7 @@ Subukan ang [Bato *interactive online console*](https://trybato.herokuapp.com/).
 
 * Yukihiro Matzumoto (Chief Designer of Ruby) - https://twitter.com/yukihiro_matz/status/962193256929832960
 * The Register - https://www.theregister.co.uk/2018/03/21/philippines_ruby_bato
-* Speed Magazine - https://www.speedmagazine.ph/bato-tagalog-programming-language-by-joel-bryan-juliano/
+* Speed Magazine - https://web.archive.org/web/20220517213101/https://www.speedmagazine.ph/bato-tagalog-programming-language-by-joel-bryan-juliano/
 * University of the Philippines (UPLB Mathematical Sciences Society) - https://twitter.com/uplbmass1973/status/1429684834511716355
 * De La Salle University (Access DLSU) - https://www.facebook.com/AccessDLSU/posts/1666465890181933
 * San Beda University (BITS San Beda) - https://www.facebook.com/BITSSanBeda/photos/a.476052709434852/1391553414551439
