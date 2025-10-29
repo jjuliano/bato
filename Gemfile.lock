@@ -9,7 +9,7 @@ GEM
   specs:
     diff-lcs (1.5.1)
     racc (1.8.0)
-    rake (13.2.1)
+    rake (13.3.1)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -39,7 +39,7 @@ PLATFORMS
 DEPENDENCIES
   bato!
   bundler (~> 2.2.19)
-  rake (~> 13.2.1)
+  rake (~> 13.3.1)
   rspec (~> 3.13.0)
 
 BUNDLED WITH
